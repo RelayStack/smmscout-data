@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-08-16T03:24:29.579Z",
+  "panels": 106,
+  "scored": 56,
+  "pending": 50,
+  "verified": 2,
+  "score": {
+    "mean": 80.7,
+    "median": 83.4,
+    "max": 105.1,
+    "distribution": {
+      "0-50": 0,
+      "50-75": 13,
+      "75-90": 33,
+      "90-100": 8,
+      "100-125": 2
+    }
+  },
+  "latency": {
+    "measured": 56,
+    "fastest_ms": [
+      74,
+      196,
+      244,
+      300,
+      490
+    ],
+    "mean_ms": 1200
+  },
+  "platforms": {
+    "Instagram": 106,
+    "TikTok": 106,
+    "YouTube": 106,
+    "Facebook": 106,
+    "X": 105,
+    "Telegram": 104,
+    "Spotify": 8,
+    "Twitch": 7,
+    "Reddit": 1,
+    "Discord": 1,
+    "Threads": 1,
+    "LinkedIn": 1,
+    "Pinterest": 1,
+    "SoundCloud": 1,
+    "Snapchat": 1
+  }
+}

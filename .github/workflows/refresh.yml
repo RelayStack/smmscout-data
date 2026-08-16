@@ -11,25 +11,51 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - name: Pull live dataset
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pull and rebuild dataset
         run: |
-          curl -sf https://smmscout.com/api/panels.json -o panels.json || exit 1
+          set -e
+          curl -sf "https://smmscout.com/api/panels.json?r=$(date +%s)" -o /tmp/panels.json
           python3 - <<'PY'
-          import json, csv
-          d = json.load(open('panels.json'))
-          with open('panels.csv', 'w', newline='') as f:
+          import json, csv, os
+          d = json.load(open('/tmp/panels.json'))
+          date = d['generated_at'][:10]
+          os.makedirs('data/snapshots', exist_ok=True)
+          os.makedirs('data/probes', exist_ok=True)
+          json.dump(d, open('data/panels.json', 'w'), indent=1)
+          if not os.path.exists(f'data/snapshots/panels-{date}.json'):
+              json.dump(d, open(f'data/snapshots/panels-{date}.json', 'w'), indent=1)
+          with open('data/panels.csv', 'w', newline='') as f:
               w = csv.writer(f)
-              w.writerow(['slug','name','domain','url','platforms','services','response_ms','verified','boost','flags'])
+              w.writerow(['slug','name','domain','url','platforms','services','response_ms','verified','boost','flags','score'])
               for p in d['panels']:
                   w.writerow([p.get('slug'), p.get('name'), p.get('domain'), p.get('url'),
                               '|'.join(p.get('platforms') or []), p.get('services'),
-                              p.get('responseMs'), p.get('verified'), p.get('boost'),
-                              ';'.join(x['text'] for x in (p.get('flags') or []))])
-          print('refreshed', d['count'], 'panels at', d['generated_at'])
+                              p.get('response_ms'), p.get('verified'), p.get('boost'),
+                              ';'.join(x['text'] for x in (p.get('flags') or [])), p.get('score')])
+          meta = {'updated': d['generated_at'], 'panels': d['count']}
+          json.dump(meta, open('meta.json', 'w'))
+          print('rebuilt at', date)
           PY
+          curl -sf "https://smmscout.com/api/probe?limit=60&r=$(date +%s)" -o /tmp/probes.json || true
+          python3 - <<'PY'
+          import json, os
+          try:
+              p = json.load(open('/tmp/probes.json'))
+              date = __import__('datetime').date.today().isoformat()
+              json.dump(p.get('results', []), open(f'data/probes/probes-{date}.json', 'w'), indent=1)
+          except Exception as e:
+              print('probe snapshot skipped:', e)
+          PY
+      - name: Validate and derive stats
+        run: |
+          node scripts/validate.mjs
+          node scripts/stats.mjs
       - name: Commit if changed
         run: |
           git config user.name "smmscout-data-bot"

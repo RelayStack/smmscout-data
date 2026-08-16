@@ -56,6 +56,16 @@ footer a { color: var(--ink); }
 </header>
 <main>
   <p class="meta" id="meta">loading…</p>
+  <div id="dists" style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:1.4rem">
+    <div style="flex:1;min-width:260px">
+      <h3>Score distribution</h3>
+      <div id="score-dist" style="display:flex;align-items:flex-end;gap:4px;height:64px"></div>
+    </div>
+    <div style="flex:1;min-width:260px">
+      <h3>Panels by platform</h3>
+      <div id="plat-dist" style="display:flex;align-items:flex-end;gap:4px;height:64px"></div>
+    </div>
+  </div>
   <h2>What is in the SMM panel dataset?</h2>
   <p>106 SMM panels with Scout Scores on a 125-point scale, measured API latency in milliseconds, live service counts, payment methods, verification status and dated risk flags. The data is published as JSON and CSV, refreshed weekly, and licensed CC BY 4.0. Scores follow the published formula at <a href="https://smmscout.com/methodology/">smmscout.com/methodology</a>.</p>
   <h2>How the Scout Score works</h2>
@@ -102,11 +112,25 @@ const score = (p) => {
 const fmt = (n) => (n == null ? '–' : Number(n).toLocaleString());
 (async () => {
   let panels = [];
+  let stats = {};
   try {
-    const res = await fetch('https://raw.githubusercontent.com/RelayStack/smmscout-data/main/panels.json');
+    const [res, sres] = await Promise.all([
+      fetch('https://raw.githubusercontent.com/RelayStack/smmscout-data/main/data/panels.json'),
+      fetch('https://raw.githubusercontent.com/RelayStack/smmscout-data/main/data/stats.json'),
+    ]);
     const d = await res.json();
     panels = d.panels ?? [];
-    document.getElementById('meta').textContent = `panels: ${d.count ?? panels.length} · measured ${d.generated_at ?? ''} · JSON + CSV · no key`;
+    stats = await sres.json().catch(() => ({}));
+    document.getElementById('meta').textContent = `panels: ${d.count ?? panels.length} · measured ${d.generated_at ?? ''} · mean score ${stats.score?.mean ?? '–'} · fastest API ${stats.latency?.fastest_ms?.[0] ?? '–'}ms · JSON + CSV · no key`;
+    const sd = stats.score?.distribution ?? {};
+    const sdEntries = Object.entries(sd);
+    const sdMax = Math.max(...sdEntries.map(([, v]) => v), 1);
+    document.getElementById('score-dist').innerHTML = sdEntries.map(([k, v]) =>
+      `<div style="flex:1;text-align:center"><div style="background:var(--accent);height:${Math.round((v / sdMax) * 64)}px;opacity:0.8" title="${k}: ${v}"></div><span style="font-size:.6rem">${k}</span></div>`).join('');
+    const pd = Object.entries(stats.platforms ?? {}).slice(0, 10);
+    const pdMax = Math.max(...pd.map(([, v]) => v), 1);
+    document.getElementById('plat-dist').innerHTML = pd.map(([k, v]) =>
+      `<div style="flex:1;text-align:center"><div style="background:var(--ink);height:${Math.round((v / pdMax) * 64)}px;opacity:0.85" title="${k}: ${v} panels"></div><span style="font-size:.6rem">${k}</span></div>`).join('');
   } catch {
     document.getElementById('meta').textContent = 'data unavailable';
   }
