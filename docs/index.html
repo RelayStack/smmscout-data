@@ -5,7 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SMM Panel Data Explorer — 106 Panels, Scores, Latency | SMMScout Open Data</title>
 <meta name="description" content="Interactive SMM panel dataset: 106 panels with Scout Scores, measured API latency, service counts, verification and dated flags. Free JSON + CSV, CC BY 4.0.">
+<meta name="author" content="SMMScout">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SMMScout Open Data">
+<meta property="og:title" content="SMM Panel Data Explorer — 106 Panels, Scores, Latency">
+<meta property="og:description" content="Free SMM panel dataset: Scout Scores, measured API latency, service counts, verification and dated flags. JSON + CSV, CC BY 4.0.">
+<meta property="og:url" content="https://relaystack.github.io/smmscout-data/">
+<meta property="og:image" content="https://raw.githubusercontent.com/RelayStack/smmscout-data/main/docs/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SMM Panel Data Explorer">
+<meta name="twitter:description" content="106 SMM panels: Scout Scores, latency, service counts. Free open dataset.">
 <link rel="canonical" href="https://relaystack.github.io/smmscout-data/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"SMMScout Open SMM Panel Dataset","description":"106 SMM panels with Scout Scores, measured API latency, service counts, payment methods, verification status and dated flags.","url":"https://github.com/RelayStack/smmscout-data","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":"SMMScout","url":"https://smmscout.com"},"distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://smmscout.com/api/panels.json"},{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://raw.githubusercontent.com/RelayStack/smmscout-data/main/panels.csv"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"SMMScout Open Data","url":"https://relaystack.github.io/smmscout-data/","description":"Interactive explorer for the SMMScout SMM panel dataset.","publisher":{"@type":"Organization","name":"SMMScout","url":"https://smmscout.com","sameAs":["https://smmscout.com/panels/","https://smmscout.com/methodology/"]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the SMM panel dataset free?","acceptedAnswer":{"@type":"Answer","text":"Yes. JSON and CSV, no API key, CORS open, licensed CC BY 4.0 with attribution to SMMScout."}},{"@type":"Question","name":"How fresh is the data?","acceptedAnswer":{"@type":"Answer","text":"The dataset refreshes automatically every Monday via GitHub Actions; the generated_at field records the pull time."}},{"@type":"Question","name":"How is the Scout Score calculated?","acceptedAnswer":{"@type":"Answer","text":"Score = longevity 30 (log-scaled) + catalog 25 (log-scaled) + API performance 35 + platform breadth 10 + owner verification 25. Max 125. The full formula is published at smmscout.com/methodology."}}]}
+</script>
 <style>
 :root { --ink:#111018; --paper:#f5f2ea; --accent:#e23c1f; --line:#d8d2c4; }
 * { box-sizing: border-box; }
@@ -37,6 +56,11 @@ footer a { color: var(--ink); }
 </header>
 <main>
   <p class="meta" id="meta">loading…</p>
+  <h2>What is in the SMM panel dataset?</h2>
+  <p>106 SMM panels with Scout Scores on a 125-point scale, measured API latency in milliseconds, live service counts, payment methods, verification status and dated risk flags. The data is published as JSON and CSV, refreshed weekly, and licensed CC BY 4.0. Scores follow the published formula at <a href="https://smmscout.com/methodology/">smmscout.com/methodology</a>.</p>
+  <h2>How the Scout Score works</h2>
+  <p>Longevity 30 (log-scaled) + catalog 25 (log-scaled) + API performance 35 + platform breadth 10 + owner verification 25. Every score is recomputable from the fields in this dataset. Panels under review carry no score; scores are never invented. The dataset includes two panels operated by the publisher (Ezkify, Smmize), disclosed and scored by the same rules.</p>
+  <h2>Explore the panels</h2>
   <div class="toolbar">
     <input id="q" type="search" placeholder="Search name or domain" aria-label="Search panels">
     <select id="f-platform" aria-label="Filter by platform"><option value="">All platforms</option></select>
@@ -50,10 +74,18 @@ footer a { color: var(--ink); }
   </table>
 </main>
 <footer>
-  Source: <a href="https://github.com/RelayStack/smmscout-data">github.com/RelayStack/smmscout-data</a> ·
-  Live API: <a href="https://smmscout.com/api/panels.json">smmscout.com/api/panels.json</a> ·
-  Methodology: <a href="https://smmscout.com/methodology/">published formula</a> ·
-  Full directory: <a href="https://smmscout.com/panels/">smmscout.com/panels/</a>
+  <h2>FAQ</h2>
+  <p><strong>Is the SMM panel dataset free?</strong> Yes — JSON and CSV, no API key, CORS open, licensed CC BY 4.0 with attribution to SMMScout.</p>
+  <p><strong>How fresh is the data?</strong> The dataset refreshes automatically every Monday via GitHub Actions; the <code>generated_at</code> field records the pull time.</p>
+  <p><strong>Why are some panels missing scores?</strong> Panels under review are listed with <code>data_quality: "pending"</code> and no score — scores are never invented.</p>
+  <p style="margin-top:1rem">
+    Source: <a href="https://github.com/RelayStack/smmscout-data">github.com/RelayStack/smmscout-data</a> ·
+    Live API: <a href="https://smmscout.com/api/panels.json">smmscout.com/api/panels.json</a> ·
+    Methodology: <a href="https://smmscout.com/methodology/">published formula</a> ·
+    Full directory: <a href="https://smmscout.com/panels/">smmscout.com/panels/</a> ·
+    Market report: <a href="https://smmscout.com/market-report/">smmscout.com/market-report/</a> ·
+    Scam reports: <a href="https://smmscout.com/scam-reports/">smmscout.com/scam-reports/</a>
+  </p>
   <p style="margin-top:.6rem">Dataset published by the team behind Ezkify and Smmize, disclosed and scored by the same rules. See <a href="https://smmscout.com/disclosure/">the disclosure</a>.</p>
 </footer>
 <script>

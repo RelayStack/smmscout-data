@@ -6,9 +6,12 @@
 ![API](https://img.shields.io/badge/API-free%20%2F%20no%20key-important)
 ![Updated](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FRelayStack%2Fsmmscout-data%2Fmain%2Fmeta.json)
 
-The **free SMM panel dataset**: 106 SMM panels with **Scout Scores**, measured
-API latency, service counts, payment methods, verification status and dated
-flags — served as JSON and CSV, refreshed automatically every week.
+The **SMMScout dataset** is a free, open collection of SMM panel data: 106 SMM
+panels with Scout Scores, measured API latency, service counts, payment methods,
+verification status and dated flags — served as JSON and CSV and refreshed
+automatically every week. It answers the question most panel rankings avoid:
+what are the measured numbers behind each panel, on what date were they taken,
+and can the ranking be recomputed from the published formula.
 
 Use it to research panels, build price monitors, power comparison tools or train
 models. No API key. CORS open. CC BY 4.0.
