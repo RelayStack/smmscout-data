@@ -1,0 +1,43 @@
+name: refresh
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pull live dataset
+        run: |
+          curl -sf https://smmscout.com/api/panels.json -o panels.json || exit 1
+          python3 - <<'PY'
+          import json, csv
+          d = json.load(open('panels.json'))
+          with open('panels.csv', 'w', newline='') as f:
+              w = csv.writer(f)
+              w.writerow(['slug','name','domain','url','platforms','services','response_ms','verified','boost','flags'])
+              for p in d['panels']:
+                  w.writerow([p.get('slug'), p.get('name'), p.get('domain'), p.get('url'),
+                              '|'.join(p.get('platforms') or []), p.get('services'),
+                              p.get('responseMs'), p.get('verified'), p.get('boost'),
+                              ';'.join(x['text'] for x in (p.get('flags') or []))])
+          print('refreshed', d['count'], 'panels at', d['generated_at'])
+          PY
+      - name: Commit if changed
+        run: |
+          git config user.name "smmscout-data-bot"
+          git config user.email "contact@smmscout.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: weekly data refresh"
+            git push
+          fi
