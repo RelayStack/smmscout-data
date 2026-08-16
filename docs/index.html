@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMM Panel Data Explorer — 106 Panels, Scores, Latency | SMMScout Open Data</title>
+<meta name="description" content="Interactive SMM panel dataset: 106 panels with Scout Scores, measured API latency, service counts, verification and dated flags. Free JSON + CSV, CC BY 4.0.">
+<link rel="canonical" href="https://relaystack.github.io/smmscout-data/">
+<style>
+:root { --ink:#111018; --paper:#f5f2ea; --accent:#e23c1f; --line:#d8d2c4; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--paper); color: var(--ink); }
+header { background: var(--ink); color: var(--paper); padding: 2rem 1.2rem; border-bottom: 3px solid var(--accent); }
+header h1 { margin: 0 0 .3rem; font-size: 1.5rem; }
+header p { margin: 0; color: #b8b3c2; font-size: .9rem; }
+main { max-width: 1100px; margin: 0 auto; padding: 1.2rem; }
+.meta { font-family: ui-monospace, Menlo, monospace; font-size: .78rem; color: #666; margin: .6rem 0 1rem; }
+.toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: .8rem; }
+input, select { padding: 8px 10px; border: 2px solid var(--ink); font-size: .85rem; background: #fff; }
+input { min-width: 240px; }
+table { width: 100%; border-collapse: collapse; font-size: .85rem; background: #fff; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { font-family: ui-monospace, Menlo, monospace; font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; cursor: pointer; }
+tr:hover { background: #faf7ef; }
+.chip { display: inline-block; font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border: 1px solid var(--ink); margin-left: 6px; }
+.chip.ours { background: var(--ink); color: var(--paper); }
+.chip.ver { background: var(--accent); color: #fff; border-color: var(--accent); }
+a { color: var(--accent); }
+footer { max-width: 1100px; margin: 2rem auto; padding: 0 1.2rem 2rem; font-size: .78rem; color: #666; }
+footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+<header>
+  <h1>SMM panel data explorer</h1>
+  <p>106 SMM panels: Scout Scores, measured API latency, service counts, verification and dated flags. Free JSON + CSV, CC BY 4.0 — data refreshed weekly.</p>
+</header>
+<main>
+  <p class="meta" id="meta">loading…</p>
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Search name or domain" aria-label="Search panels">
+    <select id="f-platform" aria-label="Filter by platform"><option value="">All platforms</option></select>
+    <select id="f-verified" aria-label="Filter by verification"><option value="">All statuses</option><option value="verified">Owner verified</option><option value="pending">Under review</option></select>
+  </div>
+  <table id="t">
+    <thead>
+      <tr><th data-k="score">Score</th><th data-k="name">Panel</th><th data-k="services">Services</th><th data-k="response_ms">API (ms)</th><th data-k="platforms">Platforms</th><th data-k="verified">Status</th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+<footer>
+  Source: <a href="https://github.com/RelayStack/smmscout-data">github.com/RelayStack/smmscout-data</a> ·
+  Live API: <a href="https://smmscout.com/api/panels.json">smmscout.com/api/panels.json</a> ·
+  Methodology: <a href="https://smmscout.com/methodology/">published formula</a> ·
+  Full directory: <a href="https://smmscout.com/panels/">smmscout.com/panels/</a>
+  <p style="margin-top:.6rem">Dataset published by the team behind Ezkify and Smmize, disclosed and scored by the same rules. See <a href="https://smmscout.com/disclosure/">the disclosure</a>.</p>
+</footer>
+<script>
+const esc = (s) => String(s ?? '').replace(/[<>&]/g, '');
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const score = (p) => {
+  if ((p.data_quality ?? '') === 'pending') return null;
+  return Math.round((clamp(Math.log(1 + Math.max(p.domain_age_years ?? 0, 0)) / Math.log(11), 0, 1) * 30
+    + (Math.log(1 + (p.services ?? 0)) / Math.log(9001)) * 25
+    + clamp(1 - (((p.response_ms ?? 4000) - 600) / 1400), 0, 1) * 35
+    + clamp((p.platforms ?? []).length / 8, 0, 1) * 10
+    + (p.verified ? 25 : 0)) * 10) / 10;
+};
+const fmt = (n) => (n == null ? '–' : Number(n).toLocaleString());
+(async () => {
+  let panels = [];
+  try {
+    const res = await fetch('https://raw.githubusercontent.com/RelayStack/smmscout-data/main/panels.json');
+    const d = await res.json();
+    panels = d.panels ?? [];
+    document.getElementById('meta').textContent = `panels: ${d.count ?? panels.length} · measured ${d.generated_at ?? ''} · JSON + CSV · no key`;
+  } catch {
+    document.getElementById('meta').textContent = 'data unavailable';
+  }
+  const tbody = document.getElementById('rows');
+  const platformSel = document.getElementById('f-platform');
+  const platforms = [...new Set(panels.flatMap((p) => p.platforms ?? []))].sort();
+  platformSel.innerHTML = '<option value="">All platforms</option>' + platforms.map((p) => `<option>${esc(p)}</option>`).join('');
+
+  let sortKey = 'score';
+  let sortDir = -1;
+  const rows = () => {
+    const q = document.getElementById('q').value.toLowerCase().trim();
+    const plat = platformSel.value;
+    const ver = document.getElementById('f-verified').value;
+    return panels
+      .filter((p) => (!q || (p.name ?? '').toLowerCase().includes(q) || (p.domain ?? '').includes(q)))
+      .filter((p) => !plat || (p.platforms ?? []).includes(plat))
+      .filter((p) => ver === '' || (ver === 'verified' ? p.verified === true : (p.data_quality ?? '') === 'pending'))
+      .sort((a, b) => {
+        let av = a[sortKey], bv = b[sortKey];
+        if (sortKey === 'name') return String(av ?? '').localeCompare(String(bv ?? '')) * sortDir;
+        if (sortKey === 'verified') return ((bv ? 1 : 0) - (av ? 1 : 0)) * sortDir || 0;
+        if (sortKey === 'platforms') return ((av?.length ?? 0) - (bv?.length ?? 0)) * sortDir;
+        return ((av ?? -1) - (bv ?? -1)) * sortDir;
+      });
+  };
+  const render = () => {
+    const list = rows();
+    tbody.innerHTML = list.map((p) => {
+      const sc = score(p);
+      return `
+      <tr>
+        <td>${sc === null ? 'pending' : sc}</td>
+        <td><a href="https://smmscout.com/panels/${esc(p.slug)}/">${esc(p.name)}</a>
+          ${p.owned ? '<span class="chip ours">ours · disclosed</span>' : ''}
+          ${p.verified ? '<span class="chip ver">verified</span>' : ''}
+          <div style="font-size:.72rem;color:#777">${esc(p.domain)}</div></td>
+        <td>${fmt(p.services)}</td>
+        <td>${p.response_ms ? fmt(p.response_ms) : '–'}</td>
+        <td>${(p.platforms ?? []).length}</td>
+        <td>${p.verified ? 'verified' : p.data_quality === 'pending' ? 'under review' : 'measured'}</td>
+      </tr>`;
+    }).join('');
+  };
+  document.getElementById('q').addEventListener('input', render);
+  platformSel.addEventListener('change', render);
+  document.getElementById('f-verified').addEventListener('change', render);
+  document.querySelectorAll('th[data-k]').forEach((th) => th.addEventListener('click', () => {
+    const k = th.dataset.k;
+    if (sortKey === k) sortDir *= -1; else { sortKey = k; sortDir = k === 'name' ? 1 : -1; }
+    render();
+  }));
+  render();
+})();
+</script>
+</body>
+</html>
