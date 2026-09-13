@@ -1,7 +1,7 @@
 # SMMScout Open Data — Free SMM Panel Dataset & API
 
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
-![Panels](https://img.shields.io/badge/panels-129-orange)
+![Panels](https://img.shields.io/badge/panels-106-orange)
 ![Refresh](https://img.shields.io/badge/refresh-weekly-green)
 ![API](https://img.shields.io/badge/API-free%20%2F%20no%20key-important)
 ![Updated](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FRelayStack%2Fsmmscout-data%2Fmain%2Fmeta.json)
