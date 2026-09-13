@@ -3,21 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SMM Panel Data Explorer — 106 Panels, Scores, Latency | SMMScout Open Data</title>
-<meta name="description" content="Interactive SMM panel dataset: 106 panels with Scout Scores, measured API latency, service counts, verification and dated flags. Free JSON + CSV, CC BY 4.0.">
+<title>SMM Panel Data Explorer — 129 Panels, Scores, Latency | SMMScout Open Data</title>
+<meta name="description" content="Interactive SMM panel dataset: 129 panels with Scout Scores, measured API latency, service counts, verification and dated flags. Free JSON + CSV, CC BY 4.0.">
 <meta name="author" content="SMMScout">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SMMScout Open Data">
-<meta property="og:title" content="SMM Panel Data Explorer — 106 Panels, Scores, Latency">
+<meta property="og:title" content="SMM Panel Data Explorer — 129 Panels, Scores, Latency">
 <meta property="og:description" content="Free SMM panel dataset: Scout Scores, measured API latency, service counts, verification and dated flags. JSON + CSV, CC BY 4.0.">
 <meta property="og:url" content="https://relaystack.github.io/smmscout-data/">
-<meta property="og:image" content="https://raw.githubusercontent.com/RelayStack/smmscout-data/main/docs/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SMM Panel Data Explorer">
-<meta name="twitter:description" content="106 SMM panels: Scout Scores, latency, service counts. Free open dataset.">
+<meta name="twitter:description" content="129 SMM panels: Scout Scores, latency, service counts. Free open dataset.">
 <link rel="canonical" href="https://relaystack.github.io/smmscout-data/">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dataset","name":"SMMScout Open SMM Panel Dataset","description":"106 SMM panels with Scout Scores, measured API latency, service counts, payment methods, verification status and dated flags.","url":"https://github.com/RelayStack/smmscout-data","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":"SMMScout","url":"https://smmscout.com"},"distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://smmscout.com/api/panels.json"},{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://raw.githubusercontent.com/RelayStack/smmscout-data/main/panels.csv"}]}
+{"@context":"https://schema.org","@type":"Dataset","name":"SMMScout Open SMM Panel Dataset","description":"129 SMM panels with Scout Scores, measured API latency, service counts, payment methods, verification status and dated flags.","url":"https://github.com/RelayStack/smmscout-data","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":"SMMScout","url":"https://smmscout.com"},"distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://smmscout.com/api/panels.json"},{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://raw.githubusercontent.com/RelayStack/smmscout-data/main/data/panels.csv"}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"SMMScout Open Data","url":"https://relaystack.github.io/smmscout-data/","description":"Interactive explorer for the SMMScout SMM panel dataset.","publisher":{"@type":"Organization","name":"SMMScout","url":"https://smmscout.com","sameAs":["https://smmscout.com/panels/","https://smmscout.com/methodology/"]}}
@@ -52,7 +51,7 @@ footer a { color: var(--ink); }
 <body>
 <header>
   <h1>SMM panel data explorer</h1>
-  <p>106 SMM panels: Scout Scores, measured API latency, service counts, verification and dated flags. Free JSON + CSV, CC BY 4.0 — data refreshed weekly.</p>
+  <p>129 SMM panels: Scout Scores, measured API latency, service counts, verification and dated flags. Free JSON + CSV, CC BY 4.0 — data refreshed weekly.</p>
 </header>
 <main>
   <p class="meta" id="meta">loading…</p>
@@ -67,9 +66,9 @@ footer a { color: var(--ink); }
     </div>
   </div>
   <h2>What is in the SMM panel dataset?</h2>
-  <p>106 SMM panels with Scout Scores on a 125-point scale, measured API latency in milliseconds, live service counts, payment methods, verification status and dated risk flags. The data is published as JSON and CSV, refreshed weekly, and licensed CC BY 4.0. Scores follow the published formula at <a href="https://smmscout.com/methodology/">smmscout.com/methodology</a>.</p>
+  <p>129 SMM panels with Scout Scores on a 125-point scale, measured API latency in milliseconds, live service counts, payment methods, verification status and dated risk flags. The data is published as JSON and CSV, refreshed weekly, and licensed CC BY 4.0. Scores follow the published formula at <a href="https://smmscout.com/methodology/">smmscout.com/methodology</a>.</p>
   <h2>How the Scout Score works</h2>
-  <p>Longevity 30 (log-scaled) + catalog 25 (log-scaled) + API performance 35 + platform breadth 10 + owner verification 25. Every score is recomputable from the fields in this dataset. Panels under review carry no score; scores are never invented. The dataset includes two panels operated by the publisher (Ezkify, Smmize), disclosed and scored by the same rules.</p>
+  <p>Longevity 30 (log-scaled, capped at 10 years) + catalog 25 (log-scaled, capped at 9,000 services) + API performance 35 + platform breadth 10 (capped at 8 platforms) + owner verification 25. Every score is recomputable from the fields in this dataset. A panel carries a score only when its data is complete <em>and</em> a liveness measurement says it is up — panels under review or not answering show no score; scores are never invented. The dataset includes two panels operated by the publisher (Ezkify, Smmize), disclosed and scored by the same rules.</p>
   <h2>Explore the panels</h2>
   <div class="toolbar">
     <input id="q" type="search" placeholder="Search name or domain" aria-label="Search panels">
@@ -100,15 +99,11 @@ footer a { color: var(--ink); }
 </footer>
 <script>
 const esc = (s) => String(s ?? '').replace(/[<>&]/g, '');
-const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
-const score = (p) => {
-  if ((p.data_quality ?? '') === 'pending') return null;
-  return Math.round((clamp(Math.log(1 + Math.max(p.domain_age_years ?? 0, 0)) / Math.log(11), 0, 1) * 30
-    + (Math.log(1 + (p.services ?? 0)) / Math.log(9001)) * 25
-    + clamp(1 - (((p.response_ms ?? 4000) - 600) / 1400), 0, 1) * 35
-    + clamp((p.platforms ?? []).length / 8, 0, 1) * 10
-    + (p.verified ? 25 : 0)) * 10) / 10;
-};
+// The dataset already publishes the Scout Score, so this page must not carry its
+// own copy of the formula: the old copy here had drifted from the published one
+// (no 9,000-service catalog cap) and printed a number for panels the dataset
+// publishes as unscored.
+const score = (p) => (typeof p.score === 'number' ? p.score : null);
 const fmt = (n) => (n == null ? '–' : Number(n).toLocaleString());
 (async () => {
   let panels = [];
@@ -163,7 +158,7 @@ const fmt = (n) => (n == null ? '–' : Number(n).toLocaleString());
       const sc = score(p);
       return `
       <tr>
-        <td>${sc === null ? 'pending' : sc}</td>
+        <td>${sc === null ? (p.operational === false ? 'not scored' : 'pending') : sc}</td>
         <td><a href="https://smmscout.com/panels/${esc(p.slug)}/">${esc(p.name)}</a>
           ${p.owned ? '<span class="chip ours">ours · disclosed</span>' : ''}
           ${p.verified ? '<span class="chip ver">verified</span>' : ''}
@@ -171,7 +166,7 @@ const fmt = (n) => (n == null ? '–' : Number(n).toLocaleString());
         <td>${fmt(p.services)}</td>
         <td>${p.response_ms ? fmt(p.response_ms) : '–'}</td>
         <td>${(p.platforms ?? []).length}</td>
-        <td>${p.verified ? 'verified' : p.data_quality === 'pending' ? 'under review' : 'measured'}</td>
+        <td>${p.verified ? 'verified' : p.operational === false ? 'not answering' : p.data_quality === 'pending' ? 'under review' : 'measured'}</td>
       </tr>`;
     }).join('');
   };

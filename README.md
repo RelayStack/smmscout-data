@@ -1,12 +1,12 @@
 # SMMScout Open Data — Free SMM Panel Dataset & API
 
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
-![Panels](https://img.shields.io/badge/panels-106-orange)
+![Panels](https://img.shields.io/badge/panels-129-orange)
 ![Refresh](https://img.shields.io/badge/refresh-weekly-green)
 ![API](https://img.shields.io/badge/API-free%20%2F%20no%20key-important)
 ![Updated](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FRelayStack%2Fsmmscout-data%2Fmain%2Fmeta.json)
 
-The **SMMScout dataset** is a free, open collection of SMM panel data: 106 SMM
+The **SMMScout dataset** is a free, open collection of SMM panel data: 129 SMM
 panels with Scout Scores, measured API latency, service counts, payment methods,
 verification status and dated flags — served as JSON and CSV and refreshed
 automatically every week. It answers the question most panel rankings avoid:
@@ -20,8 +20,10 @@ models. No API key. CORS open. CC BY 4.0.
 
 | Asset | Description |
 |---|---|
-| `panels.json` | Full dataset (primary source) |
-| `panels.csv` | Same data, flat CSV |
+| `data/panels.json` | Full dataset (primary source) |
+| `data/panels.csv` | Same data, flat CSV |
+| `data/stats.json` | Derived stats (score distribution, latency, platform counts) |
+| `data/snapshots/` | Dated snapshot of every pull |
 | `SCHEMA.md` | Every field documented |
 | `meta.json` | Refresh timestamp for badges |
 | Live API | `https://smmscout.com/api/panels.json` |
@@ -41,17 +43,17 @@ curl -s https://smmscout.com/api/panels.json \
 const res = await fetch("https://smmscout.com/api/panels.json");
 const data = await res.json();
 const fastest = [...data.panels]
-  .filter((p) => p.responseMs)
-  .sort((a, b) => a.responseMs - b.responseMs)[0];
-console.log(fastest.name, fastest.responseMs + "ms");
+  .filter((p) => p.response_ms)
+  .sort((a, b) => a.response_ms - b.response_ms)[0];
+console.log(fastest.name, fastest.response_ms + "ms");
 ```
 
 **Load into pandas (Python):**
 
 ```python
 import pandas as pd
-df = pd.read_csv("https://smmscout.com/api/panels.json")
-# or: df = pd.read_csv("https://raw.githubusercontent.com/RelayStack/smmscout-data/main/panels.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/RelayStack/smmscout-data/main/data/panels.csv")
+# full JSON payload (flags, liveness, per-panel inputs): https://smmscout.com/api/panels.json
 print(df.sort_values("services", ascending=False).head(5))
 ```
 
@@ -59,11 +61,11 @@ print(df.sort_values("services", ascending=False).head(5))
 
 | # | Panel | Domain | Score | Services | API (ms) | Verified |
 |---|---|---|---|---|---|---|
-| 1 | Ezkify | ezkify.com | 105 | 8,700 | 300 | yes |
-| 2 | Smmize | smmize.com | 102 | 3,643 | 74 | yes |
-| 3 | SocialPanel Pro | socialpanel.pro | 96 | 181,340 | 838 | no |
-| 4 | BulkFollows | bulkfollows.com | 94 | 5,638 | 684 | no |
-| 5 | InstantPanel | instantpanel.net | 93 | 5,389 | 744 | no |
+| 1 | Ezkify | ezkify.com | 105.1 | 8,700 | 492 | yes |
+| 2 | Smmize | smmize.com | 100.9 | 2,135 | 336 | yes |
+| 3 | PRM4U | prm4u.com | 97.1 | 4,885 | 419 | no |
+| 4 | BulkFollows | bulkfollows.com | 96.2 | 5,638 | 485 | no |
+| 5 | SocialPanel24 | socialpanel24.com | 96.2 | 5,591 | 384 | no |
 
 Full interactive table: **[SMM panel data explorer](https://relaystack.github.io/smmscout-data/)**
 (GitHub Pages) or the [live directory](https://smmscout.com/panels/).
@@ -75,8 +77,8 @@ the identical formula and their numbers are **not adjustable**:
 
 | Panel | Role | Score | Why the numbers are trustworthy |
 |---|---|---|---|
-| **Ezkify** (ezkify.com) | Retail panel | 105/125 · #1 | 8,700 services, 300ms API, verified; score drops would be published too |
-| **Smmize** (smmize.com) | Wholesale provider | 102/125 · #2 | Fastest measured API in the dataset (74ms), 12 platforms, verified |
+| **Ezkify** (ezkify.com) | Retail panel | 105.1/125 · #1 | 8,700 services, 492ms API, verified; score drops would be published too |
+| **Smmize** (smmize.com) | Wholesale provider | 100.9/125 · #2 | 2,135 services, 336ms API, 12 platforms, verified |
 
 Both panels carry `"owned": true` in the data, and the site documents that no
 mechanism exists to adjust their numbers — see the [disclosure](https://smmscout.com/disclosure/).
@@ -85,10 +87,25 @@ in the [changelog](https://smmscout.com/updates/). That is the point of the data
 
 ## 🧮 How the Scout Score works
 
-Score = longevity 30 (log-scaled) + catalog 25 (log-scaled) + API performance 35
-+ platform breadth 10 + owner verification 25. **Max 125.** Every score in this
-dataset is recomputable from the published inputs. Full methodology:
+Score = longevity 30 (log-scaled, capped at 10 years) + catalog 25 (log-scaled,
+capped at 9,000 services) + API performance 35 + platform breadth 10 (capped at
+8 platforms) + owner verification 25. **Max 125.** Every score in this dataset is
+recomputable from the published inputs. Full methodology:
 https://smmscout.com/methodology/
+
+A panel carries a score only when its data is complete **and** a measurement says
+it is up: `data_quality` is not `"pending"` and `liveness.state` is `"ok"`, which
+is exactly what the `operational` field reports. A dead or degraded domain is
+listed with `"score": null` — a number is never carried by a panel that is not
+answering.
+
+Every panel also carries a **risk score** (`risk_score`, integer 0-100, higher =
+more caution), built from five other public inputs: active flags, domain age, a
+missing public price floor, pending data and owner verification. Bands: 0-19 low
+risk · 20-39 caution · 40-59 elevated · 60+ high risk. The
+`https://smmscout.com/api/v2/panels.json` endpoint publishes the matching
+`risk_label`. The risk score is a warning band, not the ranking — the Scout Score
+above is the ranking.
 
 ## ❓ FAQ
 
@@ -99,7 +116,9 @@ ask: attribute SMMScout with a link when you republish.
 Actions; the `generated_at` field in `panels.json` records the pull time.
 
 **Why are some panels missing scores?** Panels under review are listed with
-`"dataQuality": "pending"` and no score. Scores are never invented for them.
+`"data_quality": "pending"` and no score, and so is a panel whose liveness probe
+did not find a healthy page (`"operational": false`, `liveness.state` not `"ok"`).
+Scores are never invented for them.
 
 **Can I use the data commercially?** Yes, under CC BY 4.0 with attribution.
 The published formula may not be repackaged as a proprietary ranking.

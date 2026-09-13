@@ -1,41 +1,43 @@
 {
-  "generated_at": "2026-09-07T08:07:40.488Z",
-  "panels": 106,
-  "scored": 56,
-  "pending": 50,
+  "generated_at": "2026-09-13T15:32:18.917Z",
+  "panels": 129,
+  "scored": 60,
+  "unscored": 69,
+  "pending": 67,
+  "not_operational": 16,
   "verified": 2,
   "score": {
-    "mean": 80.7,
-    "median": 83.4,
+    "mean": 89.3,
+    "median": 90.8,
     "max": 105.1,
     "distribution": {
-      "0-50": 0,
-      "50-75": 13,
-      "75-90": 33,
-      "90-100": 8,
+      "0-50": 2,
+      "50-75": 1,
+      "75-90": 16,
+      "90-100": 39,
       "100-125": 2
     }
   },
   "latency": {
-    "measured": 56,
+    "measured": 60,
     "fastest_ms": [
-      74,
-      196,
-      244,
-      300,
-      490
+      188,
+      263,
+      312,
+      322,
+      327
     ],
-    "mean_ms": 1200
+    "mean_ms": 611
   },
   "platforms": {
-    "Instagram": 106,
-    "TikTok": 106,
-    "YouTube": 106,
-    "Facebook": 106,
-    "X": 105,
-    "Telegram": 104,
+    "YouTube": 129,
+    "Instagram": 127,
+    "TikTok": 127,
+    "Facebook": 126,
+    "X": 125,
+    "Telegram": 124,
     "Spotify": 8,
-    "Twitch": 7,
+    "Twitch": 8,
     "Reddit": 1,
     "Discord": 1,
     "Threads": 1,

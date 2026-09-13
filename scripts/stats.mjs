@@ -1,4 +1,10 @@
 // Derived statistics from the dataset.
+//
+// "scored" is the published rule, not just data_quality: a panel has a score
+// only when its data is complete AND a measurement says it is operational
+// (liveness.state === "ok"). Counting a dead domain as score 0 put two
+// non-operational panels into the 0-50 bucket and dragged the published mean
+// down; unscored panels are now excluded from every score/latency figure.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -6,7 +12,8 @@ const root = process.cwd();
 const data = JSON.parse(readFileSync(join(root, 'data/panels.json'), 'utf8'));
 const panels = data.panels ?? [];
 
-const scored = panels.filter((p) => (p.data_quality ?? '') !== 'pending');
+const isScored = (p) => (p.data_quality ?? '') !== 'pending' && (p.liveness?.state ?? null) === 'ok';
+const scored = panels.filter(isScored);
 const scores = scored.map((p) => p.score ?? 0).sort((a, b) => a - b);
 const mean = scores.reduce((a, b) => a + b, 0) / Math.max(scores.length, 1);
 const median = scores.length ? scores[Math.floor(scores.length / 2)] : 0;
@@ -21,7 +28,9 @@ const stats = {
 	generated_at: data.generated_at,
 	panels: panels.length,
 	scored: scored.length,
-	pending: panels.length - scored.length,
+	unscored: panels.length - scored.length,
+	pending: panels.filter((p) => (p.data_quality ?? '') === 'pending').length,
+	not_operational: panels.filter((p) => (p.liveness?.state ?? null) !== 'ok').length,
 	verified: panels.filter((p) => p.verified).length,
 	score: {
 		mean: Math.round(mean * 10) / 10,
