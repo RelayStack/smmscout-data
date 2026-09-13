@@ -16,4 +16,15 @@ correction lands in the changelog with a date.
 
 - Data updates are automated (weekly refresh workflow); manual PRs are for
   docs, format fixes and new artifacts
+- Every push and PR runs `verify` (`.github/workflows/verify.yml`), which needs
+  only `node` — no `package.json`, no `npm install`. To reproduce it locally:
+
+  ```bash
+  node scripts/validate.mjs
+  node scripts/stats.mjs && git diff --exit-code data/stats.json
+  node scripts/verify-consistency.mjs
+  ```
+
+  If you touch `data/panels.json`, commit `data/panels.csv`, `data/stats.json`
+  and `meta.json` from the same pull — the run fails otherwise.
 - Keep commits focused; tests are not required for docs-only changes

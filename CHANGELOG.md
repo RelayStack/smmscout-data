@@ -36,6 +36,18 @@ Tracked on the site: https://smmscout.com/updates/
   its own copy of the formula, the CSV links point at `data/panels.csv`, and
   SCHEMA.md now documents the fields this dataset actually has (snake_case, plus
   `liveness`, `operational` and `risk_score`).
+- **CI now checks every committed dataset, not just the weekly pull.**
+  `.github/workflows/verify.yml` runs on every push and pull request: the
+  published formula is recomputed per row (`scripts/validate.mjs`),
+  `scripts/stats.mjs` must leave `data/stats.json` byte-identical
+  (`git diff --exit-code`), and the new `scripts/verify-consistency.mjs` requires
+  `meta.json` == `{updated: generated_at, panels: count}`, the CSV to carry the
+  generator-of-record header, the same row count and the same slugs, every
+  published panel-count claim in README/docs to equal the dataset, and the
+  JSON-LD blocks in `docs/index.html` to parse. This is the gate that was missing
+  when the 2026-09-08 hand-commit above shipped a 129-row `data/panels.json` next
+  to derived files still describing 106. Node only: no `package.json`, no
+  `npm install`.
 
 ## 2026-08-16
 - v1.0: initial release (106 panels)

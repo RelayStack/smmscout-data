@@ -131,6 +131,13 @@ counts and API probes from a single vantage point, dated on every panel page.
 Weekly via `.github/workflows/refresh.yml` (Mondays 03:00 UTC). Manual trigger:
 **Actions → Refresh data → Run workflow**.
 
+Every push and pull request is checked by `.github/workflows/verify.yml`, so a
+dataset committed by hand cannot ship inconsistent with its derived files: the
+published formula is recomputed for every row, `data/stats.json` must equal what
+`scripts/stats.mjs` derives from the committed `data/panels.json`, and `meta.json`,
+`data/panels.csv` and the published panel counts must all agree. The job needs
+nothing but `node` — no `npm install`.
+
 ## 📜 License
 
 CC BY 4.0 — see `LICENSE`.

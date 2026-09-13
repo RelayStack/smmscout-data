@@ -1,0 +1,37 @@
+name: verify
+
+# Every dataset that lands on a branch is checked here — the Monday `refresh`
+# workflow only validates its own pull, so a payload committed by hand shipped
+# unchecked: commit f162bda replaced data/panels.json with a 129-panel payload
+# while meta.json / data/stats.json / data/panels.csv stayed at 106 rows, and
+# GitHub Pages published it anyway. This job is the gate for that path.
+#
+# Dependency-free on purpose: node only, no package.json, no `npm install`.
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate dataset (formula, CSV parity, risk_score range)
+        run: node scripts/validate.mjs
+      - name: Derived stats are regenerated and committed
+        run: |
+          node scripts/stats.mjs
+          if ! git diff --exit-code -- data/stats.json; then
+            echo "::error file=data/stats.json::data/stats.json does not match the committed dataset — run 'node scripts/stats.mjs' and commit data/stats.json with data/panels.json"
+            exit 1
+          fi
+      - name: Consistency (meta.json, CSV rows, published panel counts)
+        run: node scripts/verify-consistency.mjs --report
