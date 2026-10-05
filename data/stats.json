@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-05T10:14:00.125Z",
+  "generated_at": "2026-10-05T13:10:01.612Z",
   "panels": 129,
   "scored": 60,
   "unscored": 69,
   "pending": 67,
-  "not_operational": 15,
+  "not_operational": 16,
   "verified": 2,
   "score": {
-    "mean": 89.7,
-    "median": 90.5,
+    "mean": 89.1,
+    "median": 90.1,
     "max": 105.1,
     "distribution": {
       "0-50": 0,
-      "50-75": 3,
-      "75-90": 23,
-      "90-100": 32,
-      "100-125": 2
+      "50-75": 2,
+      "75-90": 27,
+      "90-100": 30,
+      "100-125": 1
     }
   },
   "latency": {
     "measured": 60,
     "fastest_ms": [
-      34,
-      333,
-      415,
-      459,
-      459
+      33,
+      482,
+      491,
+      494,
+      516
     ],
-    "mean_ms": 647
+    "mean_ms": 679
   },
   "platforms": {
     "YouTube": 129,
