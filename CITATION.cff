@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: SMMScout Open Data
+message: "If you use this dataset, please cite it as below."
+authors:
+  - alias: RelayStack
+    website: "https://github.com/RelayStack/smmscout-data"
+repository-code: "https://github.com/RelayStack/smmscout-data"
+url: "https://smmscout.com"
+license: CC-BY-4.0
+version: 0.4.0
+date-released: 2026-10-11
