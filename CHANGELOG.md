@@ -2,6 +2,29 @@
 
 Tracked on the site: https://smmscout.com/updates/
 
+## 2026-10-13
+- **The mirror now refreshes *after* the source it mirrors.** `refresh.yml` ran at
+  `0 3 * * 1` while `RelayStack/smmscout`'s `weekly-maintenance.yml` — the run that
+  republishes `https://smmscout.com/api/panels.json` — is `0 4 * * 1` and publishes
+  ~15 min into its run. Scheduled runs on this account start hours late (the source
+  started 2026-10-12T11:29Z and 2026-10-05T11:01Z), so the 03:00 slot always pulled
+  the build the source was about to supersede: on 2026-10-13 this dataset carried
+  `data_built_at` 2026-10-12T01:51:34Z against a live 2026-10-12T11:36:05Z, and 59 of
+  129 published `score` values differed (114 `response_ms` too; `liveness.state` agreed).
+  The slot is now `0 20 * * 1`, ~8 h past the latest observed source start. This
+  supersedes the "Mondays 03:00 UTC" line in the 2026-08-16 entry below; the pull URL
+  and the dataset shape are unchanged — it is still the live Function-derived
+  `/api/panels.json` with `operational`, never the static artifact.
+- **Every run now reports the build it mirrored**, and flags a pull that is not newer
+  than the committed copy (`::warning title=Stale mirror pull::`). That silent case —
+  no diff, "no changes", green — is what let the ordering bug go unnoticed for weeks.
+- **Catch-up run after the fix** (run 38369958560, commit `9d5944b`): the published
+  dataset again matches `https://smmscout.com/api/panels.json` — same
+  `data_built_at` 2026-10-12T11:36:05.417Z and 0 of 129 published scores differing
+  (59 before). `scripts/validate.mjs`, `scripts/stats.mjs` +
+  `git diff --exit-code -- data/stats.json` and `scripts/verify-consistency.mjs`
+  all pass on the committed dataset.
+
 ## 2026-09-13
 - **Data refresh to the current payload** — 129 panels, `generated_at`
   2026-09-13T15:32:18Z. The mirror's `data/panels.json` had been a 2026-09-08
