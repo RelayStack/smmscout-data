@@ -128,7 +128,11 @@ counts and API probes from a single vantage point, dated on every panel page.
 
 ## 🔄 Refreshing
 
-Weekly via `.github/workflows/refresh.yml` (Mondays 03:00 UTC). Manual trigger:
+Weekly via `.github/workflows/refresh.yml` (Mondays 20:00 UTC — deliberately *after*
+[`smmscout`'s weekly run](https://github.com/RelayStack/smmscout/blob/main/.github/workflows/weekly-maintenance.yml),
+which is scheduled for 04:00 UTC and, like every scheduled run on this account, starts
+hours late; the later slot means the mirror picks up the build the source just published
+instead of the one it is about to supersede). Manual trigger:
 **Actions → Refresh data → Run workflow**.
 
 Every push and pull request is checked by `.github/workflows/verify.yml`, so a
