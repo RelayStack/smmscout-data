@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-10-13T08:32:47.090Z",
-  "panels": 129,
-  "scored": 61,
-  "unscored": 68,
-  "pending": 67,
+  "generated_at": "2026-10-19T23:09:47.465Z",
+  "panels": 193,
+  "scored": 120,
+  "unscored": 73,
+  "pending": 72,
   "not_operational": 15,
   "verified": 2,
   "score": {
-    "mean": 83.8,
-    "median": 84.3,
-    "max": 100.9,
+    "mean": 85.3,
+    "median": 87.7,
+    "max": 105.1,
     "distribution": {
       "0-50": 0,
-      "50-75": 6,
-      "75-90": 47,
-      "90-100": 7,
-      "100-125": 1
+      "50-75": 18,
+      "75-90": 60,
+      "90-100": 40,
+      "100-125": 2
     }
   },
   "latency": {
-    "measured": 61,
+    "measured": 120,
     "fastest_ms": [
       57,
-      171,
-      600,
-      708,
-      708
+      68,
+      127,
+      221,
+      444
     ],
-    "mean_ms": 910
+    "mean_ms": 639
   },
   "platforms": {
-    "YouTube": 129,
-    "Instagram": 127,
-    "TikTok": 127,
-    "Facebook": 126,
-    "X": 125,
-    "Telegram": 124,
-    "Spotify": 8,
-    "Twitch": 8,
-    "Reddit": 1,
-    "Discord": 1,
-    "Threads": 1,
-    "LinkedIn": 1,
-    "Pinterest": 1,
-    "SoundCloud": 1,
-    "Snapchat": 1
+    "YouTube": 191,
+    "Instagram": 188,
+    "TikTok": 187,
+    "Telegram": 187,
+    "Facebook": 186,
+    "X": 184,
+    "Spotify": 54,
+    "Twitch": 46,
+    "LinkedIn": 38,
+    "Discord": 31,
+    "Pinterest": 30,
+    "Threads": 28,
+    "SoundCloud": 26,
+    "Snapchat": 24,
+    "Reddit": 20
   }
 }
