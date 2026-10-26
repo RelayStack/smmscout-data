@@ -94,6 +94,14 @@ jobs:
         run: |
           node scripts/validate.mjs
           node scripts/stats.mjs
+      - name: Consistency gate (meta.json, CSV parity, published panel counts)
+        # A commit pushed with the job's own GITHUB_TOKEN does NOT trigger
+        # verify.yml, so this workflow's refreshes were the one ungated write path:
+        # the 2026-10-19 pull grew the dataset 129 -> 193 while README, docs and the
+        # repo description still claimed 129, and nothing went red. Run the same gate
+        # here, before the commit, so a bot refresh that outgrows the published
+        # claims fails loudly instead of shipping rot.
+        run: node scripts/verify-consistency.mjs --report
       - name: Commit if changed
         run: |
           git config user.name "smmscout-data-bot"

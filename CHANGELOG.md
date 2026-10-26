@@ -2,6 +2,37 @@
 
 Tracked on the site: https://smmscout.com/updates/
 
+## 2026-10-26
+- **Catch-up refresh after the source's false-liveness recovery.** The mirror had been
+  stuck on the 2026-10-19 pull: the source's 2026-10-22 weekly run published 77
+  `liveness.state: degraded` / `http-5xx` verdicts from one sweep, and 76 of those 77
+  domains answered HTTP 200 when re-measured on 2026-10-26 (only smmstore-com is a
+  genuine 503). Wiring that payload through this repo would have frozen a snapshot
+  claiming 65 healthy panels were down, so the refresh was held until the source
+  recovered (its `RelayStack/smmscout` fix shipped 2026-10-26, `data_built_at`
+  2026-10-26T10:06:05.001Z, `ok` 178 / `degraded` 2 / `dead` 13, 121 published scores).
+  Catch-up was `workflow_dispatch` of `refresh.yml` (run 40306578257, commit `c104a00`),
+  not a hand-written payload: the live `/api/panels.json` was pulled twice a few minutes
+  apart (10:16:49Z and 10:19:21Z) and the `panels` arrays were required to be deep-equal
+  before the writes.
+  `data/panels.json` now carries the same 193 rows and the same `panels` array hash as
+  the served payload; `data/snapshots/panels-2026-10-26.json` and
+  `data/probes/probes-2026-10-26.json` are from this pull.
+- **Published panel-count claims corrected (129 -> 193).** The dataset grew from 129 to
+  193 panels on 2026-10-19, but the README badge and prose, the explorer's title /
+  description / og / JSON-LD / body copy, and the GitHub repo description all still said
+  129 — and nothing failed, because a commit pushed by `refresh.yml` uses the job's
+  `GITHUB_TOKEN`, which does not trigger `verify.yml`. The superseded numbers are the
+  one write path the gate never covered; `refresh.yml` now runs
+  `scripts/verify-consistency.mjs --report` itself before it commits.
+- **Leaderboard refreshed to the current dataset** — the top five moved with the
+  2026-10-26 data: Ezkify 103.2, Smmize 96.7, InstantPanel 96.1, BulkProvider 95.1,
+  SMMResellerPanel 95.0 (PRM4U and BulkFollows are no longer in the top five). Mean
+  Scout Score 84.5, median 86.5, max 103.2 over 121 scored rows.
+- The `0 20 * * 1` slot is unchanged and did not fire late on 2026-10-26: it is scheduled
+  for 20:00 UTC, so the 10:20Z catch-up was the manual run, not a missed schedule. (The
+  "Mondays 03:00 UTC" line still quoted in older notes was superseded on 2026-10-13.)
+
 ## 2026-10-13
 - **The mirror now refreshes *after* the source it mirrors.** `refresh.yml` ran at
   `0 3 * * 1` while `RelayStack/smmscout`'s `weekly-maintenance.yml` — the run that
