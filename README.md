@@ -1,12 +1,12 @@
 # SMMScout Open Data — Free SMM Panel Dataset & API
 
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
-![Panels](https://img.shields.io/badge/panels-129-orange)
+![Panels](https://img.shields.io/badge/panels-193-orange)
 ![Refresh](https://img.shields.io/badge/refresh-weekly-green)
 ![API](https://img.shields.io/badge/API-free%20%2F%20no%20key-important)
 ![Updated](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FRelayStack%2Fsmmscout-data%2Fmain%2Fmeta.json)
 
-The **SMMScout dataset** is a free, open collection of SMM panel data: 129 SMM
+The **SMMScout dataset** is a free, open collection of SMM panel data: 193 SMM
 panels with Scout Scores, measured API latency, service counts, payment methods,
 verification status and dated flags — served as JSON and CSV and refreshed
 automatically every week. It answers the question most panel rankings avoid:
@@ -61,11 +61,11 @@ print(df.sort_values("services", ascending=False).head(5))
 
 | # | Panel | Domain | Score | Services | API (ms) | Verified |
 |---|---|---|---|---|---|---|
-| 1 | Ezkify | ezkify.com | 105.1 | 8,700 | 492 | yes |
-| 2 | Smmize | smmize.com | 100.9 | 2,135 | 336 | yes |
-| 3 | PRM4U | prm4u.com | 97.1 | 4,885 | 419 | no |
-| 4 | BulkFollows | bulkfollows.com | 96.2 | 5,638 | 485 | no |
-| 5 | SocialPanel24 | socialpanel24.com | 96.2 | 5,591 | 384 | no |
+| 1 | Ezkify | ezkify.com | 103.2 | 8,700 | 676 | yes |
+| 2 | Smmize | smmize.com | 96.7 | 457 | 281 | yes |
+| 3 | InstantPanel | instantpanel.net | 96.1 | 5,389 | 568 | no |
+| 4 | BulkProvider | bulkprovider.com | 95.1 | 12,000 | 695 | no |
+| 5 | SMMResellerPanel | smmresellerpanel.net | 95.0 | 6,745 | 639 | no |
 
 Full interactive table: **[SMM panel data explorer](https://relaystack.github.io/smmscout-data/)**
 (GitHub Pages) or the [live directory](https://smmscout.com/panels/).
@@ -77,8 +77,8 @@ the identical formula and their numbers are **not adjustable**:
 
 | Panel | Role | Score | Why the numbers are trustworthy |
 |---|---|---|---|
-| **Ezkify** (ezkify.com) | Retail panel | 105.1/125 · #1 | 8,700 services, 492ms API, verified; score drops would be published too |
-| **Smmize** (smmize.com) | Wholesale provider | 100.9/125 · #2 | 2,135 services, 336ms API, 12 platforms, verified |
+| **Ezkify** (ezkify.com) | Retail panel | 103.2/125 · #1 | 8,700 services, 676ms API, verified; score drops would be published too |
+| **Smmize** (smmize.com) | Wholesale provider | 96.7/125 · #2 | 457 services, 281ms API, 12 platforms, verified |
 
 Both panels carry `"owned": true` in the data, and the site documents that no
 mechanism exists to adjust their numbers — see the [disclosure](https://smmscout.com/disclosure/).
