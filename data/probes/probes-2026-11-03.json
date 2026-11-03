@@ -1,0 +1,418 @@
+[
+ {
+  "domain": "tghaozi.com",
+  "latency_ms": null,
+  "http_status": 520,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmize.com",
+  "latency_ms": 36,
+  "http_status": 403,
+  "endpoint": "/api/v1",
+  "auth": true
+ },
+ {
+  "domain": "figipanel.com",
+  "latency_ms": 313,
+  "http_status": 200,
+  "endpoint": "/api/v1"
+ },
+ {
+  "domain": "smmfollowom.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "amarfollows.com",
+  "latency_ms": null,
+  "http_status": 525,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "snsmarket.net",
+  "latency_ms": null,
+  "http_status": 405,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmtglux.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "thundersmmpanel.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "theytlab.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmstore.com",
+  "latency_ms": null,
+  "http_status": 503,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmlover.in",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "zipravva.com",
+  "latency_ms": 691,
+  "http_status": 200,
+  "endpoint": "/api/v1"
+ },
+ {
+  "domain": "hyperpanel.in",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "socialpanel.org",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "streamsupply.io",
+  "latency_ms": null,
+  "http_status": 525,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "my.smmfollowom.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "instantpanel.net",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "panelfollows.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmxserver.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "addliked.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmninja.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "alphasmm.net",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "traffiqqo.com",
+  "latency_ms": 1816,
+  "http_status": 200,
+  "endpoint": "/api/v1"
+ },
+ {
+  "domain": "alipanel.com",
+  "latency_ms": null,
+  "http_status": 405,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "turkiyeresellers.net",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "xmediasmm.in",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "up-seguidores.net",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "thedailysmm.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "alavancarfm.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "10000smm.top",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "amazinghosters.co",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "socialmediaservices.shop",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "safesmm.net",
+  "latency_ms": 2906,
+  "http_status": 403,
+  "endpoint": "/api/v1",
+  "auth": true
+ },
+ {
+  "domain": "agenciatheboss.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmservice.org",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmhubpanel.com",
+  "latency_ms": 3097,
+  "http_status": 200,
+  "endpoint": "/api/v1"
+ },
+ {
+  "domain": "socialmmpro.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "autosmo.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "10panel.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "smmtarget.net",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "takipcimerkezi.net",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "cheapestpanel.com",
+  "latency_ms": null,
+  "http_status": 404,
+  "endpoint": "/api/v1",
+  "mismatch": true
+ },
+ {
+  "domain": "zosmm.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "revisionsmm.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "igboostservice.net",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "smmsem.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "soouqsmm.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "vinasmm.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "smmgreat.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "agenciapopular.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "smmvaly.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "adosns.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "tube-boost.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "resellersmm.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "fbsmm.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "smm-panel.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "wksmm.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "smmhype.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "xklash.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ },
+ {
+  "domain": "smmbucks.com",
+  "latency_ms": null,
+  "http_status": 0,
+  "endpoint": "",
+  "mismatch": false
+ }
+]

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-26T23:24:29.613Z",
- "data_built_at": "2026-10-26T10:06:05.001Z",
- "data_measured_at": "2026-10-26",
+ "generated_at": "2026-11-03T01:53:22.465Z",
+ "data_built_at": "2026-11-02T12:02:14.739Z",
+ "data_measured_at": "2026-11-02",
  "count": 193,
  "formula": "https://smmscout.com/methodology/",
  "panels": [
@@ -20,7 +20,7 @@
     "Twitch"
    ],
    "services": 9950,
-   "response_ms": 1170,
+   "response_ms": 664,
    "domain_age_years": 5.4,
    "price_floor": "$0.001",
    "payments": [
@@ -39,15 +39,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1170ms",
+    "detail": "HTTP 200 in 664ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 79,
+   "score": 91.6,
    "risk_score": 25,
    "flags": [
     {
@@ -69,7 +69,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/bulkmedya-org/"
   },
   {
@@ -85,7 +85,7 @@
     "Telegram"
    ],
    "services": 9679,
-   "response_ms": 633,
+   "response_ms": 775,
    "domain_age_years": 5.6,
    "price_floor": null,
    "payments": [],
@@ -97,15 +97,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 633ms",
+    "detail": "HTTP 200 in 775ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 90.3,
+   "score": 86.7,
    "risk_score": 20,
    "flags": [
     {
@@ -115,7 +115,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/nsboostbd-com/"
   },
   {
@@ -133,7 +133,7 @@
     "Twitch"
    ],
    "services": 8480,
-   "response_ms": 778,
+   "response_ms": 612,
    "domain_age_years": 6.3,
    "price_floor": null,
    "payments": [
@@ -154,15 +154,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 778ms",
+    "detail": "HTTP 200 in 612ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 90.3,
+   "score": 94.4,
    "risk_score": 35,
    "flags": [
     {
@@ -178,7 +178,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/crescitaly-com/"
   },
   {
@@ -194,7 +194,7 @@
     "Telegram"
    ],
    "services": 8252,
-   "response_ms": 701,
+   "response_ms": 1120,
    "domain_age_years": 8,
    "price_floor": null,
    "payments": [
@@ -202,7 +202,8 @@
     "EFT",
     "PayTM",
     "Crypto",
-    "Paytm"
+    "Paytm",
+    "PayPal"
    ],
    "refill": true,
    "api": true,
@@ -212,16 +213,16 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 701ms",
+    "detail": "HTTP 200 in 1120ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 92.2,
-   "risk_score": 45,
+   "score": 81.8,
+   "risk_score": 30,
    "flags": [
     {
      "text": "Domain confusion across .com/.org/.net",
@@ -233,7 +234,7 @@
      "text": "Stale copyright (2024)",
      "severity": "warning",
      "date": "2026-08-14",
-     "resolved": false
+     "resolved": true
     },
     {
      "text": "Liveness probe: homepage returned a server error (HTTP 502), measured 2026-10-22",
@@ -242,7 +243,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmturk-com/"
   },
   {
@@ -258,7 +259,7 @@
     "Telegram"
    ],
    "services": 8088,
-   "response_ms": 929,
+   "response_ms": 946,
    "domain_age_years": 5.3,
    "price_floor": null,
    "payments": [],
@@ -270,18 +271,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 929ms",
+    "detail": "HTTP 200 in 946ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 82,
+   "score": 81.6,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmsnap-com/"
   },
   {
@@ -299,7 +300,7 @@
     "Twitch"
    ],
    "services": 7891,
-   "response_ms": 1106,
+   "response_ms": 980,
    "domain_age_years": 7.8,
    "price_floor": null,
    "payments": [
@@ -318,15 +319,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1106ms",
+    "detail": "HTTP 200 in 980ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 84.2,
+   "score": 87.3,
    "risk_score": 20,
    "flags": [
     {
@@ -336,7 +337,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmwiz-com/"
   },
   {
@@ -352,7 +353,7 @@
     "Telegram"
    ],
    "services": 7308,
-   "response_ms": 570,
+   "response_ms": 439,
    "domain_age_years": 5.5,
    "price_floor": null,
    "payments": [],
@@ -364,9 +365,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 570ms",
+    "detail": "HTTP 200 in 439ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -382,7 +383,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/up-seguidores-net/"
   },
   {
@@ -398,7 +399,7 @@
     "Telegram"
    ],
    "services": 181340,
-   "response_ms": 679,
+   "response_ms": 598,
    "domain_age_years": 7.2,
    "price_floor": null,
    "payments": [
@@ -416,15 +417,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 679ms",
+    "detail": "HTTP 200 in 598ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 91.8,
+   "score": 93.8,
    "risk_score": 35,
    "flags": [
     {
@@ -440,7 +441,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/socialpanel-pro/"
   },
   {
@@ -458,7 +459,7 @@
     "Twitch"
    ],
    "services": 7051,
-   "response_ms": 317,
+   "response_ms": 294,
    "domain_age_years": 9,
    "price_floor": null,
    "payments": [],
@@ -472,7 +473,7 @@
     "reason": "http-5xx",
     "detail": "HTTP 503",
     "http_status": 503,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -488,13 +489,13 @@
      "resolved": false
     },
     {
-     "text": "Liveness probe: homepage returned a server error (HTTP 503), measured 2026-10-26",
+     "text": "Liveness probe: homepage returned a server error (HTTP 503), measured 2026-11-02",
      "severity": "warning",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmstore-com/"
   },
   {
@@ -509,8 +510,8 @@
     "X",
     "Telegram"
    ],
-   "services": 78771,
-   "response_ms": 776,
+   "services": 79137,
+   "response_ms": 633,
    "domain_age_years": 6.1,
    "price_floor": "$0.467",
    "payments": [
@@ -525,18 +526,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 776ms",
+    "detail": "HTTP 200 in 633ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 87.6,
+   "score": 91.2,
    "risk_score": 10,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/amazingsmm-com/"
   },
   {
@@ -552,7 +553,7 @@
     "Telegram"
    ],
    "services": 6000,
-   "response_ms": 664,
+   "response_ms": 680,
    "domain_age_years": 6.2,
    "price_floor": null,
    "payments": [
@@ -568,15 +569,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 664ms",
+    "detail": "HTTP 200 in 680ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 89.5,
+   "score": 89.1,
    "risk_score": 20,
    "flags": [
     {
@@ -586,7 +587,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/bulllike-com/"
   },
   {
@@ -602,7 +603,7 @@
     "Telegram"
    ],
    "services": 6745,
-   "response_ms": 639,
+   "response_ms": 566,
    "domain_age_years": 9.4,
    "price_floor": null,
    "payments": [],
@@ -614,15 +615,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 639ms",
+    "detail": "HTTP 200 in 566ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 95,
+   "score": 96,
    "risk_score": 15,
    "flags": [
     {
@@ -632,7 +633,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmresellerpanel-net/"
   },
   {
@@ -648,7 +649,7 @@
     "Telegram"
    ],
    "services": 6199,
-   "response_ms": 700,
+   "response_ms": 529,
    "domain_age_years": 8.4,
    "price_floor": null,
    "payments": [],
@@ -660,15 +661,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 700ms",
+    "detail": "HTTP 200 in 529ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 92,
+   "score": 94.5,
    "risk_score": 15,
    "flags": [
     {
@@ -678,7 +679,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/sosyalbayin-com/"
   },
   {
@@ -694,7 +695,7 @@
     "Telegram"
    ],
    "services": 6089,
-   "response_ms": 659,
+   "response_ms": 721,
    "domain_age_years": 8.8,
    "price_floor": null,
    "payments": [
@@ -711,18 +712,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 659ms",
+    "detail": "HTTP 200 in 721ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 93.5,
+   "score": 92,
    "risk_score": 15,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/dripfeedpanel-com/"
   },
   {
@@ -738,7 +739,7 @@
     "Telegram"
    ],
    "services": 6048,
-   "response_ms": 661,
+   "response_ms": 535,
    "domain_age_years": 5.8,
    "price_floor": null,
    "payments": [
@@ -753,18 +754,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 661ms",
+    "detail": "HTTP 200 in 535ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 88.9,
+   "score": 90.4,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmstone-com/"
   },
   {
@@ -780,7 +781,7 @@
     "Telegram"
    ],
    "services": 5924,
-   "response_ms": 673,
+   "response_ms": 524,
    "domain_age_years": 8.7,
    "price_floor": null,
    "payments": [
@@ -797,18 +798,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 673ms",
+    "detail": "HTTP 200 in 524ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 93,
+   "score": 94.8,
    "risk_score": 15,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/medyabayim-com/"
   },
   {
@@ -824,7 +825,7 @@
     "Telegram"
    ],
    "services": 1000,
-   "response_ms": 872,
+   "response_ms": 676,
    "domain_age_years": 5.7,
    "price_floor": null,
    "payments": [
@@ -843,18 +844,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 872ms",
+    "detail": "HTTP 200 in 676ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 78.5,
+   "score": 83.4,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/rezzsmmpanel-com/"
   },
   {
@@ -870,7 +871,7 @@
     "Telegram"
    ],
    "services": 7019,
-   "response_ms": 709,
+   "response_ms": 657,
    "domain_age_years": 8,
    "price_floor": null,
    "payments": [
@@ -886,15 +887,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 709ms",
+    "detail": "HTTP 200 in 657ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 91.6,
+   "score": 92.9,
    "risk_score": 15,
    "flags": [
     {
@@ -904,7 +905,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmpanel-org/"
   },
   {
@@ -920,7 +921,7 @@
     "Telegram"
    ],
    "services": 5819,
-   "response_ms": 1044,
+   "response_ms": 646,
    "domain_age_years": 8,
    "price_floor": null,
    "payments": [],
@@ -932,15 +933,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1044ms",
+    "detail": "HTTP 200 in 646ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 82.7,
+   "score": 92.6,
    "risk_score": 75,
    "flags": [
     {
@@ -962,7 +963,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/presmm-com/"
   },
   {
@@ -978,7 +979,7 @@
     "Telegram"
    ],
    "services": 5798,
-   "response_ms": 896,
+   "response_ms": 464,
    "domain_age_years": 9.4,
    "price_floor": null,
    "payments": [],
@@ -990,15 +991,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 896ms",
+    "detail": "HTTP 200 in 464ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 88.2,
+   "score": 95.6,
    "risk_score": 15,
    "flags": [
     {
@@ -1008,7 +1009,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/takipcimerkezi-net/"
   },
   {
@@ -1026,7 +1027,7 @@
     "Twitch"
    ],
    "services": 5798,
-   "response_ms": 1352,
+   "response_ms": 1076,
    "domain_age_years": 9.9,
    "price_floor": null,
    "payments": [
@@ -1045,15 +1046,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1352ms",
+    "detail": "HTTP 200 in 1076ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 79.9,
+   "score": 86.8,
    "risk_score": 15,
    "flags": [
     {
@@ -1063,7 +1064,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/justanotherpanel-com/"
   },
   {
@@ -1079,7 +1080,7 @@
     "Telegram"
    ],
    "services": 5706,
-   "response_ms": 527,
+   "response_ms": 440,
    "domain_age_years": 7.2,
    "price_floor": null,
    "payments": [
@@ -1097,9 +1098,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 527ms",
+    "detail": "HTTP 200 in 440ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -1108,7 +1109,7 @@
    "score": 92.6,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/thedailysmm-com/"
   },
   {
@@ -1124,7 +1125,7 @@
     "Telegram"
    ],
    "services": 1500,
-   "response_ms": 741,
+   "response_ms": 606,
    "domain_age_years": 8,
    "price_floor": null,
    "payments": [],
@@ -1136,15 +1137,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 741ms",
+    "detail": "HTTP 200 in 606ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 86.5,
+   "score": 89.9,
    "risk_score": 15,
    "flags": [
     {
@@ -1154,7 +1155,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/socialbazar24-com/"
   },
   {
@@ -1170,7 +1171,7 @@
     "Telegram"
    ],
    "services": 5638,
-   "response_ms": 788,
+   "response_ms": 580,
    "domain_age_years": 12.9,
    "price_floor": "$0.001",
    "payments": [
@@ -1194,15 +1195,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 788ms",
+    "detail": "HTTP 200 in 580ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 91.5,
+   "score": 96.2,
    "risk_score": 20,
    "flags": [
     {
@@ -1218,7 +1219,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/bulkfollows-com/"
   },
   {
@@ -1234,7 +1235,7 @@
     "Telegram"
    ],
    "services": 5601,
-   "response_ms": 769,
+   "response_ms": 826,
    "domain_age_years": 7.6,
    "price_floor": null,
    "payments": [
@@ -1249,15 +1250,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 769ms",
+    "detail": "HTTP 200 in 826ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 88.9,
+   "score": 87.5,
    "risk_score": 20,
    "flags": [
     {
@@ -1267,7 +1268,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/naizop-com/"
   },
   {
@@ -1283,7 +1284,7 @@
     "Telegram"
    ],
    "services": 5501,
-   "response_ms": 726,
+   "response_ms": 793,
    "domain_age_years": 7.2,
    "price_floor": null,
    "payments": [
@@ -1297,15 +1298,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 726ms",
+    "detail": "HTTP 200 in 793ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 89.3,
+   "score": 87.6,
    "risk_score": 20,
    "flags": [
     {
@@ -1315,7 +1316,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/fansprovider-com/"
   },
   {
@@ -1331,7 +1332,7 @@
     "Telegram"
    ],
    "services": 5000,
-   "response_ms": 635,
+   "response_ms": 751,
    "domain_age_years": 10.3,
    "price_floor": "$0.001",
    "payments": [
@@ -1352,15 +1353,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 635ms",
+    "detail": "HTTP 200 in 751ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 95,
+   "score": 92.1,
    "risk_score": 20,
    "flags": [
     {
@@ -1376,7 +1377,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmlite-com/"
   },
   {
@@ -1392,7 +1393,7 @@
     "Telegram"
    ],
    "services": 5477,
-   "response_ms": 559,
+   "response_ms": 604,
    "domain_age_years": 5.8,
    "price_floor": null,
    "payments": [],
@@ -1404,15 +1405,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 559ms",
+    "detail": "HTTP 200 in 604ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 90.1,
+   "score": 90,
    "risk_score": 20,
    "flags": [
     {
@@ -1422,7 +1423,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/royalbasedpromotions-com/"
   },
   {
@@ -1438,7 +1439,7 @@
     "Telegram"
    ],
    "services": 5389,
-   "response_ms": 568,
+   "response_ms": 392,
    "domain_age_years": 11.1,
    "price_floor": null,
    "payments": [],
@@ -1450,9 +1451,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 568ms",
+    "detail": "HTTP 200 in 392ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -1486,7 +1487,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/instantpanel-net/"
   },
   {
@@ -1502,7 +1503,7 @@
     "Telegram"
    ],
    "services": 5336,
-   "response_ms": 517,
+   "response_ms": 449,
    "domain_age_years": 7.4,
    "price_floor": null,
    "payments": [],
@@ -1514,9 +1515,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 517ms",
+    "detail": "HTTP 200 in 449ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -1525,7 +1526,7 @@
    "score": 92.7,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/socialmediaservices-shop/"
   },
   {
@@ -1541,7 +1542,7 @@
     "Telegram"
    ],
    "services": 5304,
-   "response_ms": 636,
+   "response_ms": 475,
    "domain_age_years": 7.7,
    "price_floor": null,
    "payments": [],
@@ -1553,15 +1554,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 636ms",
+    "detail": "HTTP 200 in 475ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 92.2,
+   "score": 93.1,
    "risk_score": 20,
    "flags": [
     {
@@ -1571,7 +1572,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/igboostservice-net/"
   },
   {
@@ -1587,7 +1588,7 @@
     "Telegram"
    ],
    "services": 5081,
-   "response_ms": 893,
+   "response_ms": 578,
    "domain_age_years": 9.1,
    "price_floor": null,
    "payments": [],
@@ -1599,18 +1600,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 893ms",
+    "detail": "HTTP 200 in 578ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 87.5,
+   "score": 94.9,
    "risk_score": 15,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/opsime-su/"
   },
   {
@@ -1626,7 +1627,7 @@
     "Telegram"
    ],
    "services": 5020,
-   "response_ms": 634,
+   "response_ms": 559,
    "domain_age_years": 6.3,
    "price_floor": null,
    "payments": [],
@@ -1638,94 +1639,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 634ms",
+    "detail": "HTTP 200 in 559ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
-   },
-   "unconfirmed_failure": null,
-   "client_only_block": null,
-   "operational": true,
-   "script": "PerfectPanel",
-   "score": 89.9,
-   "risk_score": 20,
-   "flags": [
-    {
-     "text": "Liveness probe: homepage returned a server error (HTTP 502), measured 2026-10-22",
-     "severity": "warning",
-     "date": "2026-10-22",
-     "resolved": true
-    }
-   ],
-   "verified_on": "2026-10-26",
-   "url": "https://smmscout.com/panels/fastersmm-com/"
-  },
-  {
-   "slug": "medyabayiciniz-com",
-   "name": "MedyaBayiniz",
-   "domain": "medyabayiciniz.com",
-   "platforms": [
-    "Instagram",
-    "TikTok",
-    "YouTube",
-    "Facebook",
-    "X",
-    "Telegram"
-   ],
-   "services": 4957,
-   "response_ms": 793,
-   "domain_age_years": 6.1,
-   "price_floor": null,
-   "payments": [],
-   "refill": true,
-   "api": true,
-   "verified": false,
-   "owned": false,
-   "data_quality": "full",
-   "liveness": {
-    "state": "ok",
-    "reason": "http-ok",
-    "detail": "HTTP 200 in 793ms",
-    "http_status": 200,
-    "checked_at": "2026-10-26"
-   },
-   "unconfirmed_failure": null,
-   "client_only_block": null,
-   "operational": true,
-   "script": null,
-   "score": 85.6,
-   "risk_score": 20,
-   "flags": [],
-   "verified_on": "2026-10-26",
-   "url": "https://smmscout.com/panels/medyabayiciniz-com/"
-  },
-  {
-   "slug": "drxbuzz-com",
-   "name": "DrxBuzz",
-   "domain": "drxbuzz.com",
-   "platforms": [
-    "Instagram",
-    "TikTok",
-    "YouTube",
-    "Facebook",
-    "X",
-    "Telegram"
-   ],
-   "services": 4954,
-   "response_ms": 645,
-   "domain_age_years": 7,
-   "price_floor": null,
-   "payments": [],
-   "refill": true,
-   "api": true,
-   "verified": false,
-   "owned": false,
-   "data_quality": "full",
-   "liveness": {
-    "state": "ok",
-    "reason": "http-ok",
-    "detail": "HTTP 200 in 645ms",
-    "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -1741,7 +1657,92 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
+   "url": "https://smmscout.com/panels/fastersmm-com/"
+  },
+  {
+   "slug": "medyabayiciniz-com",
+   "name": "MedyaBayiniz",
+   "domain": "medyabayiciniz.com",
+   "platforms": [
+    "Instagram",
+    "TikTok",
+    "YouTube",
+    "Facebook",
+    "X",
+    "Telegram"
+   ],
+   "services": 4957,
+   "response_ms": 775,
+   "domain_age_years": 6.1,
+   "price_floor": null,
+   "payments": [],
+   "refill": true,
+   "api": true,
+   "verified": false,
+   "owned": false,
+   "data_quality": "full",
+   "liveness": {
+    "state": "ok",
+    "reason": "http-ok",
+    "detail": "HTTP 200 in 775ms",
+    "http_status": 200,
+    "checked_at": "2026-11-02"
+   },
+   "unconfirmed_failure": null,
+   "client_only_block": null,
+   "operational": true,
+   "script": null,
+   "score": 86,
+   "risk_score": 20,
+   "flags": [],
+   "verified_on": "2026-11-02",
+   "url": "https://smmscout.com/panels/medyabayiciniz-com/"
+  },
+  {
+   "slug": "drxbuzz-com",
+   "name": "DrxBuzz",
+   "domain": "drxbuzz.com",
+   "platforms": [
+    "Instagram",
+    "TikTok",
+    "YouTube",
+    "Facebook",
+    "X",
+    "Telegram"
+   ],
+   "services": 4954,
+   "response_ms": 1053,
+   "domain_age_years": 7,
+   "price_floor": null,
+   "payments": [],
+   "refill": true,
+   "api": true,
+   "verified": false,
+   "owned": false,
+   "data_quality": "full",
+   "liveness": {
+    "state": "ok",
+    "reason": "http-ok",
+    "detail": "HTTP 200 in 1053ms",
+    "http_status": 200,
+    "checked_at": "2026-11-02"
+   },
+   "unconfirmed_failure": null,
+   "client_only_block": null,
+   "operational": true,
+   "script": "PerfectPanel",
+   "score": 80.6,
+   "risk_score": 20,
+   "flags": [
+    {
+     "text": "Liveness probe: homepage returned a server error (HTTP 502), measured 2026-10-22",
+     "severity": "warning",
+     "date": "2026-10-22",
+     "resolved": true
+    }
+   ],
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/drxbuzz-com/"
   },
   {
@@ -1757,7 +1758,7 @@
     "Telegram"
    ],
    "services": 4929,
-   "response_ms": 775,
+   "response_ms": 675,
    "domain_age_years": 5.8,
    "price_floor": null,
    "payments": [
@@ -1774,15 +1775,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 775ms",
+    "detail": "HTTP 200 in 675ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 85.5,
+   "score": 88,
    "risk_score": 20,
    "flags": [
     {
@@ -1792,7 +1793,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/d3mfollow-com/"
   },
   {
@@ -1806,7 +1807,7 @@
     "Facebook"
    ],
    "services": 4919,
-   "response_ms": 543,
+   "response_ms": 668,
    "domain_age_years": 7.3,
    "price_floor": null,
    "payments": [],
@@ -1818,18 +1819,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 543ms",
+    "detail": "HTTP 200 in 668ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 89.8,
+   "score": 88.1,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/youtubemarketingwizards-com/"
   },
   {
@@ -1844,8 +1845,8 @@
     "X",
     "Telegram"
    ],
-   "services": 6159,
-   "response_ms": 713,
+   "services": 6162,
+   "response_ms": 749,
    "domain_age_years": 6.8,
    "price_floor": null,
    "payments": [],
@@ -1857,18 +1858,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 713ms",
+    "detail": "HTTP 200 in 749ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 89.3,
+   "score": 88.4,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smbulk-com/"
   },
   {
@@ -1884,7 +1885,7 @@
     "Telegram"
    ],
    "services": 4841,
-   "response_ms": 655,
+   "response_ms": 764,
    "domain_age_years": 6.2,
    "price_floor": null,
    "payments": [],
@@ -1896,18 +1897,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 655ms",
+    "detail": "HTTP 200 in 764ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 89.1,
+   "score": 86.4,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smpanel-net/"
   },
   {
@@ -1923,7 +1924,7 @@
     "Telegram"
    ],
    "services": 1000,
-   "response_ms": 683,
+   "response_ms": 459,
    "domain_age_years": 5.7,
    "price_floor": "$0.3469",
    "payments": [
@@ -1941,18 +1942,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 683ms",
+    "detail": "HTTP 200 in 459ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 83.2,
+   "score": 85.3,
    "risk_score": 10,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmtarget-net/"
   },
   {
@@ -1967,7 +1968,7 @@
     "X"
    ],
    "services": 4676,
-   "response_ms": 636,
+   "response_ms": 523,
    "domain_age_years": 9.8,
    "price_floor": null,
    "payments": [
@@ -1986,18 +1987,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 636ms",
+    "detail": "HTTP 200 in 523ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 93.3,
+   "score": 94.2,
    "risk_score": 15,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/famoustube-net/"
   },
   {
@@ -2013,7 +2014,7 @@
     "Telegram"
    ],
    "services": 12000,
-   "response_ms": 695,
+   "response_ms": 534,
    "domain_age_years": 19.7,
    "price_floor": null,
    "payments": [
@@ -2036,15 +2037,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 695ms",
+    "detail": "HTTP 200 in 534ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 95.1,
+   "score": 97.5,
    "risk_score": 15,
    "flags": [
     {
@@ -2054,7 +2055,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/bulkprovider-com/"
   },
   {
@@ -2070,7 +2071,7 @@
     "Telegram"
    ],
    "services": 4455,
-   "response_ms": 738,
+   "response_ms": 690,
    "domain_age_years": 8.3,
    "price_floor": null,
    "payments": [],
@@ -2082,18 +2083,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 738ms",
+    "detail": "HTTP 200 in 690ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 90,
+   "score": 91.2,
    "risk_score": 15,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmfull-com/"
   },
   {
@@ -2108,8 +2109,8 @@
     "X",
     "Telegram"
    ],
-   "services": 5870,
-   "response_ms": 679,
+   "services": 5880,
+   "response_ms": 522,
    "domain_age_years": 12.7,
    "price_floor": null,
    "payments": [
@@ -2127,15 +2128,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 679ms",
+    "detail": "HTTP 200 in 522ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 94.4,
+   "score": 96.3,
    "risk_score": 15,
    "flags": [
     {
@@ -2145,7 +2146,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/socialpanel24-com/"
   },
   {
@@ -2161,7 +2162,7 @@
     "Telegram"
    ],
    "services": 4284,
-   "response_ms": 502,
+   "response_ms": 576,
    "domain_age_years": 6.2,
    "price_floor": null,
    "payments": [],
@@ -2173,9 +2174,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 502ms",
+    "detail": "HTTP 200 in 576ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2191,7 +2192,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/boostyourallprofiles-com/"
   },
   {
@@ -2207,7 +2208,7 @@
     "Telegram"
    ],
    "services": 4272,
-   "response_ms": 734,
+   "response_ms": 687,
    "domain_age_years": 7.4,
    "price_floor": null,
    "payments": [
@@ -2223,18 +2224,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 734ms",
+    "detail": "HTTP 200 in 687ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 88.7,
+   "score": 89.9,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/apiseller-com/"
   },
   {
@@ -2250,7 +2251,7 @@
     "Telegram"
    ],
    "services": 4265,
-   "response_ms": 566,
+   "response_ms": 659,
    "domain_age_years": 6,
    "price_floor": null,
    "payments": [],
@@ -2262,18 +2263,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 566ms",
+    "detail": "HTTP 200 in 659ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 89.8,
+   "score": 88.3,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/seguidoresredessociales-com/"
   },
   {
@@ -2289,7 +2290,7 @@
     "Telegram"
    ],
    "services": 4213,
-   "response_ms": 617,
+   "response_ms": 686,
    "domain_age_years": 6.4,
    "price_floor": null,
    "payments": [],
@@ -2301,15 +2302,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 617ms",
+    "detail": "HTTP 200 in 686ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 90,
+   "score": 88.3,
    "risk_score": 20,
    "flags": [
     {
@@ -2319,7 +2320,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/kd1s-com/"
   },
   {
@@ -2335,7 +2336,7 @@
     "Telegram"
    ],
    "services": 2019,
-   "response_ms": 652,
+   "response_ms": 601,
    "domain_age_years": 6.1,
    "price_floor": null,
    "payments": [],
@@ -2347,18 +2348,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 652ms",
+    "detail": "HTTP 200 in 601ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 86.6,
+   "score": 87.9,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmrise-com/"
   },
   {
@@ -2374,7 +2375,7 @@
     "Telegram"
    ],
    "services": 4169,
-   "response_ms": 755,
+   "response_ms": 594,
    "domain_age_years": 7.9,
    "price_floor": null,
    "payments": [
@@ -2388,15 +2389,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 755ms",
+    "detail": "HTTP 200 in 594ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 88.9,
+   "score": 92.7,
    "risk_score": 20,
    "flags": [
     {
@@ -2406,7 +2407,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/hepsisosyal-com/"
   },
   {
@@ -2426,8 +2427,8 @@
     "Discord",
     "Threads"
    ],
-   "services": 4982,
-   "response_ms": 712,
+   "services": 4983,
+   "response_ms": 583,
    "domain_age_years": 9,
    "price_floor": "from $0.001 per 1k",
    "payments": [
@@ -2446,18 +2447,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 712ms",
+    "detail": "HTTP 200 in 583ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 94.4,
+   "score": 97.2,
    "risk_score": 5,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/prm4u-com/"
   },
   {
@@ -2474,7 +2475,7 @@
     "Spotify"
    ],
    "services": 8700,
-   "response_ms": 676,
+   "response_ms": 525,
    "domain_age_years": 1.5,
    "price_floor": "from $0.01 per 1k",
    "payments": [
@@ -2489,18 +2490,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 676ms",
+    "detail": "HTTP 200 in 525ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 103.2,
+   "score": 105.1,
    "risk_score": 5,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/ezkify-com/"
   },
   {
@@ -2522,7 +2523,7 @@
     "Snapchat"
    ],
    "services": 457,
-   "response_ms": 281,
+   "response_ms": 45,
    "domain_age_years": 1.2,
    "price_floor": "from $0.10 per 1k",
    "payments": [
@@ -2536,32 +2537,24 @@
    "owned": true,
    "data_quality": "full",
    "liveness": {
-    "state": "ok",
-    "reason": "http-ok",
-    "detail": "HTTP 200 in 281ms",
-    "http_status": 200,
-    "checked_at": "2026-10-22"
-   },
-   "unconfirmed_failure": {
     "state": "degraded",
     "reason": "blocked",
     "detail": "HTTP 403",
     "http_status": 403,
-    "checked_at": "2026-10-26",
-    "cycles": 2,
-    "of": 4
+    "checked_at": "2026-11-02"
    },
+   "unconfirmed_failure": null,
    "client_only_block": null,
-   "operational": true,
+   "operational": false,
    "script": null,
-   "score": 96.7,
-   "risk_score": 5,
+   "score": null,
+   "risk_score": 20,
    "flags": [
     {
-     "text": "Liveness probe: homepage blocked the crawler (bot wall) (HTTP 403), measured 2026-10-12",
+     "text": "Liveness probe: homepage blocked the crawler (bot wall) (HTTP 403), measured 2026-11-02",
      "severity": "warning",
      "date": "2026-09-14",
-     "resolved": true
+     "resolved": false
     }
    ],
    "verified_on": "2026-10-22",
@@ -2594,7 +2587,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2604,13 +2597,13 @@
    "risk_score": 75,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/addfans-org/"
   },
   {
@@ -2626,7 +2619,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 659,
+   "response_ms": 929,
    "domain_age_years": 5.5,
    "price_floor": null,
    "payments": [],
@@ -2638,9 +2631,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 659ms",
+    "detail": "HTTP 200 in 929ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2649,7 +2642,7 @@
    "score": null,
    "risk_score": 35,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/addfanslikes-com/"
   },
   {
@@ -2665,7 +2658,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 572,
+   "response_ms": 412,
    "domain_age_years": 0.3,
    "price_floor": null,
    "payments": [],
@@ -2677,9 +2670,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 572ms",
+    "detail": "HTTP 200 in 412ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2688,7 +2681,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/addliked-com/"
   },
   {
@@ -2704,7 +2697,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 557,
+   "response_ms": 503,
    "domain_age_years": 8.1,
    "price_floor": null,
    "payments": [],
@@ -2716,9 +2709,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 557ms",
+    "detail": "HTTP 200 in 503ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2727,7 +2720,7 @@
    "score": null,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/adosns-com/"
   },
   {
@@ -2743,7 +2736,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 888,
+   "response_ms": 783,
    "domain_age_years": 4.5,
    "price_floor": null,
    "payments": [],
@@ -2755,9 +2748,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 888ms",
+    "detail": "HTTP 200 in 783ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2766,7 +2759,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/adsmm-net/"
   },
   {
@@ -2796,7 +2789,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2806,13 +2799,13 @@
    "risk_score": 75,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-10-01",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/adsosmed-com/"
   },
   {
@@ -2828,7 +2821,7 @@
     "Telegram"
    ],
    "services": 2836,
-   "response_ms": 559,
+   "response_ms": 524,
    "domain_age_years": 5.9,
    "price_floor": null,
    "payments": [
@@ -2844,9 +2837,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 559ms",
+    "detail": "HTTP 200 in 524ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2862,7 +2855,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/africansmmpanel-com/"
   },
   {
@@ -2892,7 +2885,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2902,13 +2895,13 @@
    "risk_score": 75,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/agenciamixgram-com/"
   },
   {
@@ -2924,7 +2917,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 547,
+   "response_ms": 500,
    "domain_age_years": 6.6,
    "price_floor": null,
    "payments": [],
@@ -2936,9 +2929,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 547ms",
+    "detail": "HTTP 200 in 500ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2954,7 +2947,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/agenciapopular-com/"
   },
   {
@@ -2970,7 +2963,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 563,
+   "response_ms": 451,
    "domain_age_years": 3.5,
    "price_floor": null,
    "payments": [],
@@ -2982,9 +2975,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 563ms",
+    "detail": "HTTP 200 in 451ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -2993,7 +2986,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/agenciatheboss-com/"
   },
   {
@@ -3009,7 +3002,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 2305,
+   "response_ms": 2408,
    "domain_age_years": 2,
    "price_floor": null,
    "payments": [],
@@ -3021,9 +3014,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 2305ms",
+    "detail": "HTTP 200 in 2408ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3032,7 +3025,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/aiproads-com/"
   },
   {
@@ -3048,7 +3041,7 @@
     "Telegram"
    ],
    "services": 829,
-   "response_ms": 646,
+   "response_ms": 525,
    "domain_age_years": 4.6,
    "price_floor": null,
    "payments": [
@@ -3065,15 +3058,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 646ms",
+    "detail": "HTTP 200 in 525ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 81.4,
+   "score": 82.5,
    "risk_score": 25,
    "flags": [
     {
@@ -3083,7 +3076,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/airsmm-com/"
   },
   {
@@ -3113,7 +3106,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3123,13 +3116,13 @@
    "risk_score": 75,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-21",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/akakakvip-com/"
   },
   {
@@ -3145,7 +3138,7 @@
     "Telegram"
    ],
    "services": 567,
-   "response_ms": 484,
+   "response_ms": 441,
    "domain_age_years": 5,
    "price_floor": null,
    "payments": [],
@@ -3157,9 +3150,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 484ms",
+    "detail": "HTTP 200 in 441ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3168,7 +3161,7 @@
    "score": 82.3,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/alavancarfm-com/"
   },
   {
@@ -3198,7 +3191,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3208,13 +3201,13 @@
    "risk_score": 65,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/alexfollow-com/"
   },
   {
@@ -3230,7 +3223,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 624,
+   "response_ms": 576,
    "domain_age_years": 1.9,
    "price_floor": null,
    "payments": [],
@@ -3242,9 +3235,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 624ms",
+    "detail": "HTTP 200 in 576ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3260,7 +3253,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/alfa-smm-com/"
   },
   {
@@ -3290,7 +3283,7 @@
     "reason": "parked",
     "detail": "A record 127.0.0.1",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3300,13 +3293,13 @@
    "risk_score": 75,
    "flags": [
     {
-     "text": "Liveness probe: domain resolves to a local/parked address (A record 127.0.0.1), measured 2026-10-26",
+     "text": "Liveness probe: domain resolves to a local/parked address (A record 127.0.0.1), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/ali-saad-net/"
   },
   {
@@ -3336,7 +3329,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3346,13 +3339,13 @@
    "risk_score": 65,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/aliencoder-org/"
   },
   {
@@ -3368,7 +3361,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 824,
+   "response_ms": 429,
    "domain_age_years": 3,
    "price_floor": null,
    "payments": [],
@@ -3380,9 +3373,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 824ms",
+    "detail": "HTTP 200 in 429ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3391,7 +3384,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/alipanel-com/"
   },
   {
@@ -3421,7 +3414,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3431,13 +3424,13 @@
    "risk_score": 75,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/aliservere-com/"
   },
   {
@@ -3453,7 +3446,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 699,
+   "response_ms": 613,
    "domain_age_years": 1.8,
    "price_floor": null,
    "payments": [
@@ -3467,9 +3460,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 699ms",
+    "detail": "HTTP 200 in 613ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3485,7 +3478,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/alkabos-com/"
   },
   {
@@ -3501,7 +3494,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 609,
+   "response_ms": 418,
    "domain_age_years": 6.5,
    "price_floor": null,
    "payments": [],
@@ -3513,9 +3506,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 609ms",
+    "detail": "HTTP 200 in 418ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3531,7 +3524,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/alphasmm-net/"
   },
   {
@@ -3547,7 +3540,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 222,
+   "response_ms": 151,
    "domain_age_years": 1,
    "price_floor": null,
    "payments": [],
@@ -3559,9 +3552,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 222ms",
+    "detail": "HTTP 200 in 151ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3570,7 +3563,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/amarfollows-com/"
   },
   {
@@ -3586,7 +3579,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 673,
+   "response_ms": 446,
    "domain_age_years": 2.8,
    "price_floor": null,
    "payments": [
@@ -3601,9 +3594,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 673ms",
+    "detail": "HTTP 200 in 446ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3612,7 +3605,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/amazinghosters-co/"
   },
   {
@@ -3642,7 +3635,7 @@
     "reason": "http-4xx",
     "detail": "HTTP 404",
     "http_status": 404,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3652,13 +3645,13 @@
    "risk_score": 60,
    "flags": [
     {
-     "text": "Liveness probe: homepage refused the request (HTTP 404), measured 2026-10-26",
+     "text": "Liveness probe: homepage refused the request (HTTP 404), measured 2026-11-02",
      "severity": "warning",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/angkorsmm-net/"
   },
   {
@@ -3674,7 +3667,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 196,
+   "response_ms": 163,
    "domain_age_years": 5.7,
    "price_floor": null,
    "payments": [],
@@ -3686,9 +3679,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 196ms",
+    "detail": "HTTP 200 in 163ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3697,7 +3690,7 @@
    "score": null,
    "risk_score": 35,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/snsmarket-net/"
   },
   {
@@ -3713,7 +3706,7 @@
     "Telegram"
    ],
    "services": 1197,
-   "response_ms": 507,
+   "response_ms": 454,
    "domain_age_years": 6.8,
    "price_floor": null,
    "payments": [
@@ -3727,9 +3720,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 507ms",
+    "detail": "HTTP 200 in 454ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3745,7 +3738,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/socialmmpro-com/"
   },
   {
@@ -3761,7 +3754,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 655,
+   "response_ms": 644,
    "domain_age_years": 8.7,
    "price_floor": null,
    "payments": [
@@ -3775,9 +3768,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 655ms",
+    "detail": "HTTP 200 in 644ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3793,7 +3786,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/sosyalatom-com/"
   },
   {
@@ -3809,7 +3802,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 757,
+   "response_ms": 732,
    "domain_age_years": 5.5,
    "price_floor": null,
    "payments": [
@@ -3823,9 +3816,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 757ms",
+    "detail": "HTTP 200 in 732ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3841,7 +3834,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/starads-net/"
   },
   {
@@ -3871,7 +3864,7 @@
     "reason": "parked",
     "detail": "A record 127.0.0.1",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3881,13 +3874,13 @@
    "risk_score": 70,
    "flags": [
     {
-     "text": "Liveness probe: domain resolves to a local/parked address (A record 127.0.0.1), measured 2026-10-26",
+     "text": "Liveness probe: domain resolves to a local/parked address (A record 127.0.0.1), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/streampanelus-com/"
   },
   {
@@ -3903,7 +3896,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": null,
+   "response_ms": 378,
    "domain_age_years": 0.8,
    "price_floor": null,
    "payments": [],
@@ -3913,27 +3906,27 @@
    "owned": false,
    "data_quality": "pending",
    "liveness": {
-    "state": "dead",
-    "reason": "parked",
-    "detail": "A record 127.0.0.1",
-    "http_status": null,
-    "checked_at": "2026-10-26"
+    "state": "ok",
+    "reason": "http-ok",
+    "detail": "HTTP 200 in 378ms",
+    "http_status": 200,
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
-   "operational": false,
+   "operational": true,
    "script": "PerfectPanel",
    "score": null,
-   "risk_score": 75,
+   "risk_score": 45,
    "flags": [
     {
-     "text": "Liveness probe: domain resolves to a local/parked address (A record 127.0.0.1), measured 2026-10-26",
+     "text": "Liveness probe: domain resolves to a local/parked address (A record 127.0.0.1), measured 2026-10-29",
      "severity": "critical",
      "date": "2026-10-11",
-     "resolved": false
+     "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/streamsupply-io/"
   },
   {
@@ -3949,7 +3942,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 739,
+   "response_ms": 641,
    "domain_age_years": 3.6,
    "price_floor": null,
    "payments": [
@@ -3965,9 +3958,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 739ms",
+    "detail": "HTTP 200 in 641ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -3983,7 +3976,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/techsmm-com/"
   },
   {
@@ -4013,7 +4006,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4023,13 +4016,13 @@
    "risk_score": 75,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/telebaz-com/"
   },
   {
@@ -4045,7 +4038,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 66,
+   "response_ms": 35,
    "domain_age_years": 1.9,
    "price_floor": null,
    "payments": [],
@@ -4057,9 +4050,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 66ms",
+    "detail": "HTTP 200 in 35ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4075,7 +4068,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/tghaozi-com/"
   },
   {
@@ -4091,7 +4084,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 253,
+   "response_ms": 201,
    "domain_age_years": 7.9,
    "price_floor": null,
    "payments": [],
@@ -4103,9 +4096,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 253ms",
+    "detail": "HTTP 200 in 201ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4114,7 +4107,7 @@
    "score": null,
    "risk_score": 35,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/thundersmmpanel-com/"
   },
   {
@@ -4130,7 +4123,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 569,
+   "response_ms": 573,
    "domain_age_years": 2.7,
    "price_floor": "$0.5",
    "payments": [],
@@ -4142,9 +4135,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 569ms",
+    "detail": "HTTP 200 in 573ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4153,7 +4146,7 @@
    "score": null,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/tntsmm-com/"
   },
   {
@@ -4168,8 +4161,8 @@
     "X",
     "Telegram"
    ],
-   "services": 8566,
-   "response_ms": 684,
+   "services": 8684,
+   "response_ms": 425,
    "domain_age_years": 0.3,
    "price_floor": null,
    "payments": [
@@ -4185,18 +4178,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 684ms",
+    "detail": "HTTP 200 in 425ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 68.5,
+   "score": 70.7,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/traffiqqo-com/"
   },
   {
@@ -4212,7 +4205,7 @@
     "Telegram"
    ],
    "services": 500,
-   "response_ms": 985,
+   "response_ms": 975,
    "domain_age_years": 2.6,
    "price_floor": null,
    "payments": [
@@ -4228,18 +4221,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 985ms",
+    "detail": "HTTP 200 in 975ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 66,
+   "score": 66.2,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/trendspherepro-com/"
   },
   {
@@ -4255,7 +4248,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 716,
+   "response_ms": 599,
    "domain_age_years": 3.1,
    "price_floor": null,
    "payments": [
@@ -4270,9 +4263,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 716ms",
+    "detail": "HTTP 200 in 599ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4281,7 +4274,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/tunisstars-com/"
   },
   {
@@ -4297,7 +4290,7 @@
     "Telegram"
    ],
    "services": 3199,
-   "response_ms": 583,
+   "response_ms": 429,
    "domain_age_years": 7.3,
    "price_floor": null,
    "payments": [],
@@ -4309,9 +4302,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 583ms",
+    "detail": "HTTP 200 in 429ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4327,7 +4320,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/turkiyeresellers-net/"
   },
   {
@@ -4357,7 +4350,7 @@
     "reason": "parked",
     "detail": "A record 127.0.0.1",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4367,13 +4360,13 @@
    "risk_score": 70,
    "flags": [
     {
-     "text": "Liveness probe: domain resolves to a local/parked address (A record 127.0.0.1), measured 2026-10-26",
+     "text": "Liveness probe: domain resolves to a local/parked address (A record 127.0.0.1), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/uasmm-com/"
   },
   {
@@ -4389,10 +4382,13 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 1070,
+   "response_ms": 1370,
    "domain_age_years": 1.6,
    "price_floor": null,
-   "payments": [],
+   "payments": [
+    "UPI",
+    "Paytm"
+   ],
    "refill": null,
    "api": null,
    "verified": false,
@@ -4401,9 +4397,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1070ms",
+    "detail": "HTTP 200 in 1370ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4412,7 +4408,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/vikashservicecenter-com/"
   },
   {
@@ -4427,8 +4423,8 @@
     "X",
     "Telegram"
    ],
-   "services": 7955,
-   "response_ms": 600,
+   "services": 8116,
+   "response_ms": 510,
    "domain_age_years": 4.4,
    "price_floor": null,
    "payments": [
@@ -4446,9 +4442,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 600ms",
+    "detail": "HTTP 200 in 510ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4464,7 +4460,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/wksmm-com/"
   },
   {
@@ -4494,7 +4490,7 @@
     "reason": "nxdomain",
     "detail": "NXDOMAIN on the host resolver + DoH",
     "http_status": null,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4504,13 +4500,13 @@
    "risk_score": 75,
    "flags": [
     {
-     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-10-26",
+     "text": "Liveness probe: no DNS record (NXDOMAIN) (NXDOMAIN on the host resolver + DoH), measured 2026-11-02",
      "severity": "critical",
      "date": "2026-09-13",
      "resolved": false
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/wnyinliu-com/"
   },
   {
@@ -4526,7 +4522,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 584,
+   "response_ms": 516,
    "domain_age_years": 3.3,
    "price_floor": null,
    "payments": [],
@@ -4538,9 +4534,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 584ms",
+    "detail": "HTTP 200 in 516ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4556,7 +4552,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/xklash-com/"
   },
   {
@@ -4572,7 +4568,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 857,
+   "response_ms": 570,
    "domain_age_years": 2.3,
    "price_floor": null,
    "payments": [],
@@ -4584,9 +4580,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 857ms",
+    "detail": "HTTP 200 in 570ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4595,7 +4591,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/youtubeliker-com/"
   },
   {
@@ -4611,7 +4607,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 633,
+   "response_ms": 694,
    "domain_age_years": 9,
    "price_floor": null,
    "payments": [],
@@ -4623,9 +4619,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 633ms",
+    "detail": "HTTP 200 in 694ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4634,7 +4630,7 @@
    "score": null,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/ytmatikvip-com/"
   },
   {
@@ -4649,8 +4645,8 @@
     "X",
     "Telegram"
    ],
-   "services": 8566,
-   "response_ms": 452,
+   "services": 8684,
+   "response_ms": 351,
    "domain_age_years": 3,
    "price_floor": null,
    "payments": [
@@ -4665,9 +4661,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 452ms",
+    "detail": "HTTP 200 in 351ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4676,7 +4672,7 @@
    "score": 84.7,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/zipravva-com/"
   },
   {
@@ -4692,7 +4688,7 @@
     "Telegram"
    ],
    "services": 1832,
-   "response_ms": 532,
+   "response_ms": 474,
    "domain_age_years": 4.8,
    "price_floor": null,
    "payments": [
@@ -4711,9 +4707,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 532ms",
+    "detail": "HTTP 200 in 474ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4729,7 +4725,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/zosmm-com/"
   },
   {
@@ -4744,8 +4740,8 @@
     "X",
     "Telegram"
    ],
-   "services": 20174,
-   "response_ms": 43,
+   "services": 20120,
+   "response_ms": 75,
    "domain_age_years": 3.3,
    "price_floor": null,
    "payments": [
@@ -4764,9 +4760,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 43ms",
+    "detail": "HTTP 200 in 75ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4775,7 +4771,7 @@
    "score": 85.7,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/figipanel-com/"
   },
   {
@@ -4791,7 +4787,7 @@
     "Telegram"
    ],
    "services": 39403,
-   "response_ms": 771,
+   "response_ms": 711,
    "domain_age_years": 1.2,
    "price_floor": null,
    "payments": [
@@ -4810,15 +4806,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 771ms",
+    "detail": "HTTP 200 in 711ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 73.1,
+   "score": 74.6,
    "risk_score": 30,
    "flags": [
     {
@@ -4828,7 +4824,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smm-panel-net/"
   },
   {
@@ -4844,7 +4840,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 516,
+   "response_ms": 508,
    "domain_age_years": 10.3,
    "price_floor": null,
    "payments": [
@@ -4860,9 +4856,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 516ms",
+    "detail": "HTTP 200 in 508ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -4871,7 +4867,7 @@
    "score": null,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smm-panel-com/"
   },
   {
@@ -4887,7 +4883,7 @@
     "Telegram"
    ],
    "services": 7825,
-   "response_ms": 818,
+   "response_ms": 488,
    "domain_age_years": 4.6,
    "price_floor": null,
    "payments": [
@@ -4901,18 +4897,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 818ms",
+    "detail": "HTTP 200 in 488ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 83.2,
+   "score": 88.7,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmsem-com/"
   },
   {
@@ -4928,7 +4924,7 @@
     "Telegram"
    ],
    "services": 1600,
-   "response_ms": 921,
+   "response_ms": 785,
    "domain_age_years": 12.8,
    "price_floor": null,
    "payments": [
@@ -4945,15 +4941,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 921ms",
+    "detail": "HTTP 200 in 785ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 84.7,
+   "score": 88.1,
    "risk_score": 15,
    "flags": [
     {
@@ -4963,7 +4959,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/boostero-com/"
   },
   {
@@ -4979,7 +4975,7 @@
     "Telegram"
    ],
    "services": 1792,
-   "response_ms": 492,
+   "response_ms": 458,
    "domain_age_years": 12.8,
    "price_floor": null,
    "payments": [
@@ -4994,9 +4990,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 492ms",
+    "detail": "HTTP 200 in 458ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5005,7 +5001,7 @@
    "score": 93.1,
    "risk_score": 15,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/autosmo-com/"
   },
   {
@@ -5021,7 +5017,7 @@
     "Telegram"
    ],
    "services": 5000,
-   "response_ms": 755,
+   "response_ms": 521,
    "domain_age_years": 3.8,
    "price_floor": null,
    "payments": [
@@ -5038,15 +5034,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 755ms",
+    "detail": "HTTP 200 in 521ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 81.6,
+   "score": 85.5,
    "risk_score": 25,
    "flags": [
     {
@@ -5056,7 +5052,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smbpanel-net/"
   },
   {
@@ -5072,7 +5068,7 @@
     "Telegram"
    ],
    "services": 554,
-   "response_ms": 657,
+   "response_ms": 617,
    "domain_age_years": 3.6,
    "price_floor": null,
    "payments": [
@@ -5092,18 +5088,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 657ms",
+    "detail": "HTTP 200 in 617ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 77.5,
+   "score": 78.5,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmpanel2-com/"
   },
   {
@@ -5119,7 +5115,7 @@
     "Telegram"
    ],
    "services": 1000,
-   "response_ms": 707,
+   "response_ms": 808,
    "domain_age_years": 6.4,
    "price_floor": null,
    "payments": [
@@ -5138,15 +5134,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 707ms",
+    "detail": "HTTP 200 in 808ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 83.8,
+   "score": 81.3,
    "risk_score": 20,
    "flags": [
     {
@@ -5156,7 +5152,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/worldofsmm-com/"
   },
   {
@@ -5172,7 +5168,7 @@
     "Telegram"
    ],
    "services": 2275,
-   "response_ms": 1111,
+   "response_ms": 609,
    "domain_age_years": 9.2,
    "price_floor": null,
    "payments": [
@@ -5186,15 +5182,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1111ms",
+    "detail": "HTTP 200 in 609ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 80,
+   "score": 92.6,
    "risk_score": 15,
    "flags": [
     {
@@ -5204,7 +5200,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/cutesmm-com/"
   },
   {
@@ -5220,7 +5216,7 @@
     "Telegram"
    ],
    "services": 5000,
-   "response_ms": 582,
+   "response_ms": 655,
    "domain_age_years": 5.8,
    "price_floor": null,
    "payments": [],
@@ -5232,15 +5228,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 582ms",
+    "detail": "HTTP 200 in 655ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 89.9,
+   "score": 88.5,
    "risk_score": 20,
    "flags": [
     {
@@ -5250,7 +5246,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/liketide-com/"
   },
   {
@@ -5266,7 +5262,7 @@
     "Telegram"
    ],
    "services": 3681,
-   "response_ms": 539,
+   "response_ms": 548,
    "domain_age_years": 8.6,
    "price_floor": null,
    "payments": [],
@@ -5278,9 +5274,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 539ms",
+    "detail": "HTTP 200 in 548ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5296,7 +5292,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/dijitalistasyon-com/"
   },
   {
@@ -5312,7 +5308,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 942,
+   "response_ms": 729,
    "domain_age_years": 3.4,
    "price_floor": null,
    "payments": [],
@@ -5324,9 +5320,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 942ms",
+    "detail": "HTTP 200 in 729ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5335,7 +5331,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/lionfollow-com/"
   },
   {
@@ -5351,7 +5347,7 @@
     "Telegram"
    ],
    "services": 5855,
-   "response_ms": 616,
+   "response_ms": 580,
    "domain_age_years": 2.8,
    "price_floor": null,
    "payments": [],
@@ -5363,15 +5359,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 616ms",
+    "detail": "HTTP 200 in 580ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 82.6,
+   "score": 83,
    "risk_score": 25,
    "flags": [
     {
@@ -5381,7 +5377,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmcoder-com/"
   },
   {
@@ -5411,7 +5407,7 @@
     "reason": "http-ok",
     "detail": "HTTP 200 in 632ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5420,7 +5416,7 @@
    "score": 78.6,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/bulksupplier-org/"
   },
   {
@@ -5436,7 +5432,7 @@
     "Telegram"
    ],
    "services": 9446,
-   "response_ms": 707,
+   "response_ms": 609,
    "domain_age_years": 4.5,
    "price_floor": null,
    "payments": [
@@ -5454,15 +5450,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 707ms",
+    "detail": "HTTP 200 in 609ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 86.2,
+   "score": 88.6,
    "risk_score": 25,
    "flags": [
     {
@@ -5472,7 +5468,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmcost-com/"
   },
   {
@@ -5488,7 +5484,7 @@
     "Telegram"
    ],
    "services": 6771,
-   "response_ms": 657,
+   "response_ms": 630,
    "domain_age_years": 3.8,
    "price_floor": null,
    "payments": [],
@@ -5500,18 +5496,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 657ms",
+    "detail": "HTTP 200 in 630ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 84.9,
+   "score": 85.6,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmbind-com/"
   },
   {
@@ -5527,7 +5523,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 832,
+   "response_ms": 669,
    "domain_age_years": 4,
    "price_floor": null,
    "payments": [],
@@ -5539,9 +5535,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 832ms",
+    "detail": "HTTP 200 in 669ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5550,7 +5546,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/godofpanel-com/"
   },
   {
@@ -5566,7 +5562,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 678,
+   "response_ms": 543,
    "domain_age_years": 9,
    "price_floor": null,
    "payments": [
@@ -5585,9 +5581,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 678ms",
+    "detail": "HTTP 200 in 543ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5603,7 +5599,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmfollows-com/"
   },
   {
@@ -5619,7 +5615,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 1209,
+   "response_ms": 966,
    "domain_age_years": 4.3,
    "price_floor": null,
    "payments": [],
@@ -5631,9 +5627,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1209ms",
+    "detail": "HTTP 200 in 966ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5642,7 +5638,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/iamprovider-com/"
   },
   {
@@ -5655,7 +5651,7 @@
     "TikTok"
    ],
    "services": 5280,
-   "response_ms": 534,
+   "response_ms": 521,
    "domain_age_years": 5.1,
    "price_floor": null,
    "payments": [],
@@ -5667,9 +5663,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 534ms",
+    "detail": "HTTP 200 in 521ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5678,7 +5674,7 @@
    "score": 84.9,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/ytresellers-com/"
   },
   {
@@ -5690,7 +5686,7 @@
     "YouTube"
    ],
    "services": null,
-   "response_ms": 725,
+   "response_ms": 641,
    "domain_age_years": 3.9,
    "price_floor": null,
    "payments": [
@@ -5705,9 +5701,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 725ms",
+    "detail": "HTTP 200 in 641ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5723,7 +5719,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/makesmm-com/"
   },
   {
@@ -5734,7 +5730,7 @@
     "YouTube"
    ],
    "services": null,
-   "response_ms": 177,
+   "response_ms": 243,
    "domain_age_years": 5.6,
    "price_floor": null,
    "payments": [
@@ -5750,9 +5746,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 177ms",
+    "detail": "HTTP 200 in 243ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5761,7 +5757,7 @@
    "score": null,
    "risk_score": 35,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/theytlab-com/"
   },
   {
@@ -5777,7 +5773,7 @@
     "Telegram"
    ],
    "services": 12412,
-   "response_ms": 903,
+   "response_ms": 707,
    "domain_age_years": 3.6,
    "price_floor": null,
    "payments": [
@@ -5793,18 +5789,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 903ms",
+    "detail": "HTTP 200 in 707ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 79,
+   "score": 83.9,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/morethanpanel-com/"
   },
   {
@@ -5820,7 +5816,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 1346,
+   "response_ms": 1407,
    "domain_age_years": 5.6,
    "price_floor": null,
    "payments": [
@@ -5836,9 +5832,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1346ms",
+    "detail": "HTTP 200 in 1407ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5854,7 +5850,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/followdeh-com/"
   },
   {
@@ -5870,7 +5866,7 @@
     "Telegram"
    ],
    "services": 984,
-   "response_ms": 755,
+   "response_ms": 629,
    "domain_age_years": 3.5,
    "price_floor": null,
    "payments": [],
@@ -5882,18 +5878,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 755ms",
+    "detail": "HTTP 200 in 629ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 76.4,
+   "score": 79.5,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/1dular-com/"
   },
   {
@@ -5909,7 +5905,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 691,
+   "response_ms": 517,
    "domain_age_years": 3.9,
    "price_floor": null,
    "payments": [
@@ -5924,9 +5920,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 691ms",
+    "detail": "HTTP 200 in 517ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5935,7 +5931,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/darksidepanel-com/"
   },
   {
@@ -5953,7 +5949,7 @@
     "Twitch"
    ],
    "services": 6361,
-   "response_ms": 527,
+   "response_ms": 445,
    "domain_age_years": 1.9,
    "price_floor": null,
    "payments": [
@@ -5968,9 +5964,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 527ms",
+    "detail": "HTTP 200 in 445ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -5979,7 +5975,7 @@
    "score": 82.4,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/10000smm-top/"
   },
   {
@@ -5994,7 +5990,7 @@
     "Telegram"
    ],
    "services": 577,
-   "response_ms": 605,
+   "response_ms": 458,
    "domain_age_years": 1.5,
    "price_floor": null,
    "payments": [],
@@ -6006,18 +6002,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 605ms",
+    "detail": "HTTP 200 in 458ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 70.1,
+   "score": 70.2,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/10panel-com/"
   },
   {
@@ -6037,7 +6033,7 @@
     "SoundCloud"
    ],
    "services": 5952,
-   "response_ms": 729,
+   "response_ms": 588,
    "domain_age_years": 1.8,
    "price_floor": null,
    "payments": [
@@ -6051,18 +6047,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 729ms",
+    "detail": "HTTP 200 in 588ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 78.5,
+   "score": 81.7,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/apismm-com/"
   },
   {
@@ -6078,7 +6074,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 832,
+   "response_ms": 724,
    "domain_age_years": 2.6,
    "price_floor": null,
    "payments": [],
@@ -6090,9 +6086,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 832ms",
+    "detail": "HTTP 200 in 724ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6101,7 +6097,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/boosttelega-online/"
   },
   {
@@ -6126,7 +6122,7 @@
     "Threads"
    ],
    "services": 4360,
-   "response_ms": 810,
+   "response_ms": 585,
    "domain_age_years": 2.8,
    "price_floor": null,
    "payments": [
@@ -6140,18 +6136,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 810ms",
+    "detail": "HTTP 200 in 585ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 79.5,
+   "score": 84.7,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/brsmm-com/"
   },
   {
@@ -6175,7 +6171,7 @@
     "Threads"
    ],
    "services": 1886,
-   "response_ms": 821,
+   "response_ms": 697,
    "domain_age_years": 5.8,
    "price_floor": null,
    "payments": [
@@ -6191,18 +6187,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 821ms",
+    "detail": "HTTP 200 in 697ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "RentalPanel",
-   "score": 84.2,
+   "score": 87.3,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/bulksmmfollows-com/"
   },
   {
@@ -6221,7 +6217,7 @@
     "SoundCloud"
    ],
    "services": null,
-   "response_ms": 704,
+   "response_ms": 464,
    "domain_age_years": 9.4,
    "price_floor": null,
    "payments": [],
@@ -6233,9 +6229,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 704ms",
+    "detail": "HTTP 200 in 464ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6244,7 +6240,7 @@
    "score": null,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/cheapestpanel-com/"
   },
   {
@@ -6267,7 +6263,7 @@
     "Threads"
    ],
    "services": 634,
-   "response_ms": 799,
+   "response_ms": 546,
    "domain_age_years": 3.5,
    "price_floor": null,
    "payments": [
@@ -6282,18 +6278,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 799ms",
+    "detail": "HTTP 200 in 546ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 76.6,
+   "score": 81.5,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/chickletboost-com/"
   },
   {
@@ -6312,7 +6308,7 @@
     "Snapchat"
    ],
    "services": null,
-   "response_ms": 621,
+   "response_ms": 534,
    "domain_age_years": 0.5,
    "price_floor": null,
    "payments": [
@@ -6326,9 +6322,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 621ms",
+    "detail": "HTTP 200 in 534ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6337,7 +6333,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/darksmm-store/"
   },
   {
@@ -6350,7 +6346,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 682,
+   "response_ms": 506,
    "domain_age_years": 1.9,
    "price_floor": null,
    "payments": [],
@@ -6362,9 +6358,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 682ms",
+    "detail": "HTTP 200 in 506ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6373,7 +6369,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/fbsmm-com/"
   },
   {
@@ -6397,7 +6393,7 @@
     "Threads"
    ],
    "services": null,
-   "response_ms": 632,
+   "response_ms": 769,
    "domain_age_years": 0.6,
    "price_floor": null,
    "payments": [
@@ -6414,9 +6410,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 632ms",
+    "detail": "HTTP 200 in 769ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6425,7 +6421,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/followersprovider-com/"
   },
   {
@@ -6449,7 +6445,7 @@
     "Threads"
    ],
    "services": 4497,
-   "response_ms": 711,
+   "response_ms": 531,
    "domain_age_years": 2.9,
    "price_floor": null,
    "payments": [],
@@ -6461,18 +6457,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 711ms",
+    "detail": "HTTP 200 in 531ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 82.3,
+   "score": 85.1,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/followersvangurd-com/"
   },
   {
@@ -6494,7 +6490,7 @@
     "Threads"
    ],
    "services": 1192,
-   "response_ms": 708,
+   "response_ms": 700,
    "domain_age_years": 2.6,
    "price_floor": null,
    "payments": [],
@@ -6506,18 +6502,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 708ms",
+    "detail": "HTTP 200 in 700ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 77.8,
+   "score": 78,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/heysmmreseller-com/"
   },
   {
@@ -6540,7 +6536,7 @@
     "Snapchat"
    ],
    "services": 1500,
-   "response_ms": 326,
+   "response_ms": 360,
    "domain_age_years": 1.1,
    "price_floor": null,
    "payments": [
@@ -6558,9 +6554,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 326ms",
+    "detail": "HTTP 200 in 360ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6569,7 +6565,7 @@
    "score": 74.4,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/hyperpanel-in/"
   },
   {
@@ -6592,7 +6588,7 @@
     "Threads"
    ],
    "services": null,
-   "response_ms": 734,
+   "response_ms": 720,
    "domain_age_years": 1.6,
    "price_floor": null,
    "payments": [],
@@ -6604,9 +6600,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 734ms",
+    "detail": "HTTP 200 in 720ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6615,7 +6611,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/lesmmpanel-com/"
   },
   {
@@ -6640,7 +6636,7 @@
     "Threads"
    ],
    "services": 1000,
-   "response_ms": 624,
+   "response_ms": 520,
    "domain_age_years": 6.9,
    "price_floor": null,
    "payments": [
@@ -6654,18 +6650,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 624ms",
+    "detail": "HTTP 200 in 520ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 89.2,
+   "score": 89.8,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/likesmm-net/"
   },
   {
@@ -6686,7 +6682,7 @@
     "Threads"
    ],
    "services": null,
-   "response_ms": 949,
+   "response_ms": 615,
    "domain_age_years": 2.5,
    "price_floor": null,
    "payments": [],
@@ -6698,9 +6694,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 949ms",
+    "detail": "HTTP 200 in 615ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6709,7 +6705,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/mundosmm-com/"
   },
   {
@@ -6725,7 +6721,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 720,
+   "response_ms": 525,
    "domain_age_years": null,
    "price_floor": null,
    "payments": [],
@@ -6737,9 +6733,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 720ms",
+    "detail": "HTTP 200 in 525ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6748,7 +6744,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/my-getmyfollow-com/"
   },
   {
@@ -6769,7 +6765,7 @@
     "Threads"
    ],
    "services": 2023,
-   "response_ms": 643,
+   "response_ms": 380,
    "domain_age_years": null,
    "price_floor": null,
    "payments": [],
@@ -6781,18 +6777,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 643ms",
+    "detail": "HTTP 200 in 380ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 64.8,
+   "score": 65.9,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/my-smmfollowom-com/"
   },
   {
@@ -6815,7 +6811,7 @@
     "SoundCloud"
    ],
    "services": 4170,
-   "response_ms": 488,
+   "response_ms": 569,
    "domain_age_years": null,
    "price_floor": null,
    "payments": [],
@@ -6827,9 +6823,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 488ms",
+    "detail": "HTTP 200 in 569ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6838,7 +6834,7 @@
    "score": 67.9,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/my-smmsun-com/"
   },
   {
@@ -6857,7 +6853,7 @@
     "Discord"
    ],
    "services": null,
-   "response_ms": 763,
+   "response_ms": 395,
    "domain_age_years": 4.7,
    "price_floor": null,
    "payments": [],
@@ -6869,9 +6865,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 763ms",
+    "detail": "HTTP 200 in 395ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6880,7 +6876,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/panelfollows-com/"
   },
   {
@@ -6898,7 +6894,7 @@
     "LinkedIn"
    ],
    "services": 1641,
-   "response_ms": 589,
+   "response_ms": 1093,
    "domain_age_years": 4.7,
    "price_floor": null,
    "payments": [],
@@ -6910,18 +6906,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 589ms",
+    "detail": "HTTP 200 in 1093ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 87.1,
+   "score": 74.8,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/prixsmm-com/"
   },
   {
@@ -6937,7 +6933,7 @@
     "Pinterest"
    ],
    "services": null,
-   "response_ms": 972,
+   "response_ms": 905,
    "domain_age_years": 2.1,
    "price_floor": null,
    "payments": [],
@@ -6949,9 +6945,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 972ms",
+    "detail": "HTTP 200 in 905ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -6960,7 +6956,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/provedorsmm-com/"
   },
   {
@@ -6975,7 +6971,7 @@
     "Telegram"
    ],
    "services": 2432,
-   "response_ms": 623,
+   "response_ms": 562,
    "domain_age_years": 1.7,
    "price_floor": null,
    "payments": [],
@@ -6987,18 +6983,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 623ms",
+    "detail": "HTTP 200 in 562ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 74.5,
+   "score": 75.1,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/rapidsmmpanel-com/"
   },
   {
@@ -7014,7 +7010,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 1230,
+   "response_ms": 780,
    "domain_age_years": null,
    "price_floor": "$0.5",
    "payments": [],
@@ -7026,9 +7022,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1230ms",
+    "detail": "HTTP 200 in 780ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7037,7 +7033,7 @@
    "score": null,
    "risk_score": 35,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/reallikes-ru/"
   },
   {
@@ -7054,7 +7050,7 @@
     "LinkedIn"
    ],
    "services": 4113,
-   "response_ms": 624,
+   "response_ms": 689,
    "domain_age_years": 3.4,
    "price_floor": null,
    "payments": [],
@@ -7066,18 +7062,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 624ms",
+    "detail": "HTTP 200 in 689ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 84.5,
+   "score": 82.9,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/reliablesmm-com/"
   },
   {
@@ -7092,7 +7088,7 @@
     "X"
    ],
    "services": 4712,
-   "response_ms": 676,
+   "response_ms": 505,
    "domain_age_years": 1.9,
    "price_floor": null,
    "payments": [
@@ -7108,15 +7104,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 676ms",
+    "detail": "HTTP 200 in 505ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 75.9,
+   "score": 77.8,
    "risk_score": 30,
    "flags": [
     {
@@ -7126,7 +7122,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/resellersmm-com/"
   },
   {
@@ -7142,7 +7138,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 658,
+   "response_ms": 474,
    "domain_age_years": 3.1,
    "price_floor": null,
    "payments": [],
@@ -7154,9 +7150,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 658ms",
+    "detail": "HTTP 200 in 474ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7165,7 +7161,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/revisionsmm-com/"
   },
   {
@@ -7182,7 +7178,7 @@
     "Spotify"
    ],
    "services": null,
-   "response_ms": 426,
+   "response_ms": 449,
    "domain_age_years": 2,
    "price_floor": null,
    "payments": [
@@ -7199,9 +7195,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 426ms",
+    "detail": "HTTP 200 in 449ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7210,7 +7206,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/safesmm-net/"
   },
   {
@@ -7235,7 +7231,7 @@
     "Threads"
    ],
    "services": null,
-   "response_ms": 641,
+   "response_ms": 835,
    "domain_age_years": null,
    "price_floor": "$0.12",
    "payments": [
@@ -7250,9 +7246,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 641ms",
+    "detail": "HTTP 200 in 835ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7261,7 +7257,7 @@
    "score": null,
    "risk_score": 35,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smm-socnet-pro/"
   },
   {
@@ -7282,7 +7278,7 @@
     "Threads"
    ],
    "services": 1000,
-   "response_ms": 665,
+   "response_ms": 645,
    "domain_age_years": 2.2,
    "price_floor": null,
    "payments": [],
@@ -7294,18 +7290,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 665ms",
+    "detail": "HTTP 200 in 645ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 76.9,
+   "score": 77.4,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmbright-com/"
   },
   {
@@ -7328,7 +7324,7 @@
     "Threads"
    ],
    "services": 9800,
-   "response_ms": 704,
+   "response_ms": 516,
    "domain_age_years": 5.4,
    "price_floor": null,
    "payments": [],
@@ -7340,15 +7336,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 704ms",
+    "detail": "HTTP 200 in 516ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 90.6,
+   "score": 93.2,
    "risk_score": 20,
    "flags": [
     {
@@ -7358,7 +7354,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmbucks-com/"
   },
   {
@@ -7379,7 +7375,7 @@
     "Threads"
    ],
    "services": null,
-   "response_ms": 731,
+   "response_ms": 587,
    "domain_age_years": 9,
    "price_floor": null,
    "payments": [
@@ -7394,9 +7390,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 731ms",
+    "detail": "HTTP 200 in 587ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7412,7 +7408,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmcheap-com/"
   },
   {
@@ -7431,7 +7427,7 @@
     "Snapchat"
    ],
    "services": 500,
-   "response_ms": 910,
+   "response_ms": 614,
    "domain_age_years": 0.5,
    "price_floor": "$0.001",
    "payments": [
@@ -7448,18 +7444,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 910ms",
+    "detail": "HTTP 200 in 614ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 59.4,
+   "score": 66.8,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmdope-com/"
   },
   {
@@ -7478,7 +7474,7 @@
     "SoundCloud"
    ],
    "services": null,
-   "response_ms": 637,
+   "response_ms": 817,
    "domain_age_years": 3.4,
    "price_floor": null,
    "payments": [
@@ -7492,9 +7488,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 637ms",
+    "detail": "HTTP 200 in 817ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7503,7 +7499,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmdubai-com/"
   },
   {
@@ -7523,8 +7519,8 @@
     "SoundCloud",
     "Threads"
    ],
-   "services": 5016,
-   "response_ms": 89,
+   "services": 5057,
+   "response_ms": 106,
    "domain_age_years": 4.2,
    "price_floor": null,
    "payments": [
@@ -7541,9 +7537,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 89ms",
+    "detail": "HTTP 200 in 106ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7552,7 +7548,7 @@
    "score": 89,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmfollowom-com/"
   },
   {
@@ -7577,7 +7573,7 @@
     "Threads"
    ],
    "services": 2018,
-   "response_ms": 1549,
+   "response_ms": 1895,
    "domain_age_years": 4.5,
    "price_floor": null,
    "payments": [
@@ -7595,18 +7591,18 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 1549ms",
+    "detail": "HTTP 200 in 1895ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": null,
-   "score": 63.5,
+   "score": 54.8,
    "risk_score": 25,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmgen-com/"
   },
   {
@@ -7626,7 +7622,7 @@
     "LinkedIn"
    ],
    "services": 1102,
-   "response_ms": 758,
+   "response_ms": 638,
    "domain_age_years": 1.5,
    "price_floor": null,
    "payments": [],
@@ -7638,15 +7634,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 758ms",
+    "detail": "HTTP 200 in 638ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 71.7,
+   "score": 74.7,
    "risk_score": 30,
    "flags": [
     {
@@ -7656,7 +7652,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmgo-io/"
   },
   {
@@ -7676,7 +7672,7 @@
     "Threads"
    ],
    "services": 2115,
-   "response_ms": 638,
+   "response_ms": 494,
    "domain_age_years": 6.8,
    "price_floor": null,
    "payments": [],
@@ -7688,15 +7684,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 638ms",
+    "detail": "HTTP 200 in 494ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 90.8,
+   "score": 91.7,
    "risk_score": 20,
    "flags": [
     {
@@ -7706,7 +7702,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmgreat-com/"
   },
   {
@@ -7724,7 +7720,7 @@
     "LinkedIn"
    ],
    "services": null,
-   "response_ms": 536,
+   "response_ms": 453,
    "domain_age_years": 2,
    "price_floor": null,
    "payments": [
@@ -7738,9 +7734,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 536ms",
+    "detail": "HTTP 200 in 453ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7749,7 +7745,7 @@
    "score": null,
    "risk_score": 40,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmhubpanel-com/"
   },
   {
@@ -7767,7 +7763,7 @@
     "Twitch"
    ],
    "services": 8146,
-   "response_ms": 636,
+   "response_ms": 515,
    "domain_age_years": 5.2,
    "price_floor": null,
    "payments": [
@@ -7782,15 +7778,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 636ms",
+    "detail": "HTTP 200 in 515ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 91.7,
+   "score": 92.6,
    "risk_score": 20,
    "flags": [
     {
@@ -7800,7 +7796,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmhype-com/"
   },
   {
@@ -7815,7 +7811,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 450,
+   "response_ms": 331,
    "domain_age_years": 0.3,
    "price_floor": null,
    "payments": [],
@@ -7827,9 +7823,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 450ms",
+    "detail": "HTTP 200 in 331ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7838,7 +7834,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmlover-in/"
   },
   {
@@ -7859,7 +7855,7 @@
     "Threads"
    ],
    "services": 5550,
-   "response_ms": 503,
+   "response_ms": 413,
    "domain_age_years": 4.6,
    "price_floor": null,
    "payments": [
@@ -7873,9 +7869,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 503ms",
+    "detail": "HTTP 200 in 413ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -7891,7 +7887,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmninja-com/"
   },
   {
@@ -7912,8 +7908,8 @@
     "Pinterest",
     "SoundCloud"
    ],
-   "services": 5427,
-   "response_ms": 897,
+   "services": 5547,
+   "response_ms": 727,
    "domain_age_years": 2.8,
    "price_floor": null,
    "payments": [
@@ -7932,15 +7928,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 897ms",
+    "detail": "HTTP 200 in 727ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 77.9,
+   "score": 82.2,
    "risk_score": 25,
    "flags": [
     {
@@ -7950,7 +7946,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmpanelking-com/"
   },
   {
@@ -7969,7 +7965,7 @@
     "Threads"
    ],
    "services": 3000,
-   "response_ms": 785,
+   "response_ms": 748,
    "domain_age_years": 0.8,
    "price_floor": "$0.015",
    "payments": [
@@ -7989,15 +7985,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 785ms",
+    "detail": "HTTP 200 in 748ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 69.7,
+   "score": 70.6,
    "risk_score": 20,
    "flags": [
     {
@@ -8007,7 +8003,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmpanelprovide-com/"
   },
   {
@@ -8023,7 +8019,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 654,
+   "response_ms": 574,
    "domain_age_years": 5.1,
    "price_floor": null,
    "payments": [
@@ -8037,9 +8033,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 654ms",
+    "detail": "HTTP 200 in 574ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8055,7 +8051,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmpanelus-com/"
   },
   {
@@ -8080,7 +8076,7 @@
     "Threads"
    ],
    "services": 1415,
-   "response_ms": 689,
+   "response_ms": 581,
    "domain_age_years": 6.5,
    "price_floor": null,
    "payments": [
@@ -8100,15 +8096,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 689ms",
+    "detail": "HTTP 200 in 581ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 87.9,
+   "score": 90.1,
    "risk_score": 20,
    "flags": [
     {
@@ -8118,7 +8114,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmpod-com/"
   },
   {
@@ -8135,7 +8131,7 @@
     "Spotify"
    ],
    "services": null,
-   "response_ms": 746,
+   "response_ms": 626,
    "domain_age_years": 11.2,
    "price_floor": null,
    "payments": [
@@ -8150,9 +8146,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 746ms",
+    "detail": "HTTP 200 in 626ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8161,7 +8157,7 @@
    "score": null,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmraja-com/"
   },
   {
@@ -8185,7 +8181,7 @@
     "Threads"
    ],
    "services": null,
-   "response_ms": 712,
+   "response_ms": 539,
    "domain_age_years": 0.2,
    "price_floor": null,
    "payments": [
@@ -8204,9 +8200,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 712ms",
+    "detail": "HTTP 200 in 539ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8215,7 +8211,7 @@
    "score": null,
    "risk_score": 45,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmresellershub-com/"
   },
   {
@@ -8234,7 +8230,7 @@
     "Pinterest"
    ],
    "services": 3367,
-   "response_ms": 942,
+   "response_ms": 451,
    "domain_age_years": 0.6,
    "price_floor": null,
    "payments": [
@@ -8252,15 +8248,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 942ms",
+    "detail": "HTTP 200 in 451ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 64.6,
+   "score": 73.2,
    "risk_score": 30,
    "flags": [
     {
@@ -8270,7 +8266,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmservice-org/"
   },
   {
@@ -8283,10 +8279,10 @@
     "X",
     "Telegram"
    ],
-   "services": 1085,
-   "response_ms": 531,
+   "services": 1080,
+   "response_ms": 185,
    "domain_age_years": 0.3,
-   "price_floor": "$0.016",
+   "price_floor": "$0.0018",
    "payments": [
     "Crypto"
    ],
@@ -8298,9 +8294,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 531ms",
+    "detail": "HTTP 200 in 185ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8309,7 +8305,7 @@
    "score": 62.5,
    "risk_score": 20,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmtglux-com/"
   },
   {
@@ -8333,7 +8329,7 @@
     "SoundCloud"
    ],
    "services": 965,
-   "response_ms": 613,
+   "response_ms": 501,
    "domain_age_years": 5.9,
    "price_floor": null,
    "payments": [
@@ -8350,15 +8346,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 613ms",
+    "detail": "HTTP 200 in 501ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 87.7,
+   "score": 88,
    "risk_score": 20,
    "flags": [
     {
@@ -8368,7 +8364,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmvaly-com/"
   },
   {
@@ -8382,7 +8378,7 @@
     "Telegram"
    ],
    "services": 5709,
-   "response_ms": 187,
+   "response_ms": 406,
    "domain_age_years": 3.8,
    "price_floor": null,
    "payments": [],
@@ -8394,9 +8390,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 639ms",
+    "detail": "HTTP 200 in 406ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8412,7 +8408,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmxserver-com/"
   },
   {
@@ -8436,7 +8432,7 @@
     "Threads"
    ],
    "services": 690,
-   "response_ms": 678,
+   "response_ms": 560,
    "domain_age_years": 2.2,
    "price_floor": null,
    "payments": [
@@ -8450,15 +8446,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 678ms",
+    "detail": "HTTP 200 in 560ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 75.6,
+   "score": 77.5,
    "risk_score": 25,
    "flags": [
     {
@@ -8468,7 +8464,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmxsocial-com/"
   },
   {
@@ -8490,7 +8486,7 @@
     "Pinterest"
    ],
    "services": 2499,
-   "response_ms": 849,
+   "response_ms": 708,
    "domain_age_years": 4.4,
    "price_floor": null,
    "payments": [],
@@ -8502,15 +8498,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 849ms",
+    "detail": "HTTP 200 in 708ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 81.4,
+   "score": 84.9,
    "risk_score": 25,
    "flags": [
     {
@@ -8520,7 +8516,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/smmxstar-com/"
   },
   {
@@ -8544,7 +8540,7 @@
     "Threads"
    ],
    "services": null,
-   "response_ms": 586,
+   "response_ms": 375,
    "domain_age_years": 12.5,
    "price_floor": null,
    "payments": [
@@ -8560,9 +8556,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 586ms",
+    "detail": "HTTP 200 in 375ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8571,7 +8567,7 @@
    "score": null,
    "risk_score": 30,
    "flags": [],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/socialpanel-org/"
   },
   {
@@ -8585,7 +8581,7 @@
     "Telegram"
    ],
    "services": 812,
-   "response_ms": 532,
+   "response_ms": 489,
    "domain_age_years": 3.1,
    "price_floor": null,
    "payments": [],
@@ -8597,9 +8593,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 532ms",
+    "detail": "HTTP 200 in 489ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8615,7 +8611,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/soouqsmm-com/"
   },
   {
@@ -8631,7 +8627,7 @@
     "Telegram"
    ],
    "services": null,
-   "response_ms": 532,
+   "response_ms": 616,
    "domain_age_years": 1.2,
    "price_floor": null,
    "payments": [],
@@ -8643,9 +8639,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 532ms",
+    "detail": "HTTP 200 in 616ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8661,7 +8657,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/tgsmm-com/"
   },
   {
@@ -8686,7 +8682,7 @@
     "Threads"
    ],
    "services": 2730,
-   "response_ms": 743,
+   "response_ms": 817,
    "domain_age_years": 4.6,
    "price_floor": null,
    "payments": [
@@ -8705,15 +8701,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 743ms",
+    "detail": "HTTP 200 in 817ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 84.7,
+   "score": 82.9,
    "risk_score": 25,
    "flags": [
     {
@@ -8723,7 +8719,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/themainsmm-com/"
   },
   {
@@ -8748,10 +8744,12 @@
     "Threads"
    ],
    "services": 4902,
-   "response_ms": 719,
+   "response_ms": 609,
    "domain_age_years": 2.9,
    "price_floor": null,
-   "payments": [],
+   "payments": [
+    "Cards"
+   ],
    "refill": null,
    "api": null,
    "verified": false,
@@ -8760,15 +8758,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 719ms",
+    "detail": "HTTP 200 in 609ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 82.4,
+   "score": 85.1,
    "risk_score": 25,
    "flags": [
     {
@@ -8778,7 +8776,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/thepanel-top/"
   },
   {
@@ -8793,7 +8791,7 @@
     "Reddit"
    ],
    "services": 738,
-   "response_ms": 613,
+   "response_ms": 504,
    "domain_age_years": 4.1,
    "price_floor": null,
    "payments": [
@@ -8808,15 +8806,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 613ms",
+    "detail": "HTTP 200 in 504ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 79.4,
+   "score": 79.8,
    "risk_score": 25,
    "flags": [
     {
@@ -8826,7 +8824,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/tube-boost-com/"
   },
   {
@@ -8849,7 +8847,7 @@
     "SoundCloud"
    ],
    "services": 1975,
-   "response_ms": 494,
+   "response_ms": 490,
    "domain_age_years": 6.6,
    "price_floor": null,
    "payments": [],
@@ -8861,9 +8859,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 494ms",
+    "detail": "HTTP 200 in 490ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8879,7 +8877,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/vinasmm-com/"
   },
   {
@@ -8904,7 +8902,7 @@
     "Threads"
    ],
    "services": 5408,
-   "response_ms": 758,
+   "response_ms": 3042,
    "domain_age_years": null,
    "price_floor": null,
    "payments": [
@@ -8920,15 +8918,15 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 758ms",
+    "detail": "HTTP 200 in 3042ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
    "operational": true,
    "script": "PerfectPanel",
-   "score": 64.7,
+   "score": 33.6,
    "risk_score": 30,
    "flags": [
     {
@@ -8938,7 +8936,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/worldlikes-com-co/"
   },
   {
@@ -8961,7 +8959,7 @@
     "Threads"
    ],
    "services": 2208,
-   "response_ms": 565,
+   "response_ms": 429,
    "domain_age_years": 5.1,
    "price_floor": null,
    "payments": [],
@@ -8973,9 +8971,9 @@
    "liveness": {
     "state": "ok",
     "reason": "http-ok",
-    "detail": "HTTP 200 in 565ms",
+    "detail": "HTTP 200 in 429ms",
     "http_status": 200,
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-02"
    },
    "unconfirmed_failure": null,
    "client_only_block": null,
@@ -8991,7 +8989,7 @@
      "resolved": true
     }
    ],
-   "verified_on": "2026-10-26",
+   "verified_on": "2026-11-02",
    "url": "https://smmscout.com/panels/xmediasmm-in/"
   }
  ]
